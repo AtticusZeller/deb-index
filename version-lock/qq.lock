@@ -1,18 +1,4 @@
-[DEBUG] version_url: https://im.qq.com/linuxqq/index.shtml
-[DEBUG] version_pattern: QQ_([0-9.]+_[0-9]+)_amd64
-[DEBUG] HTML content fetched (truncated):
-<!DOCTYPE html>
-<!--[if lte IE 8]><html lang="zh" class="ie8"><![endif]-->
-<html dt-pgid="pg_bas_linux_official_website" dt-params="">
-  <head>
-    <title>QQ Linux版-轻松做自己</title>
-    <meta charset="utf-8" />
-    <meta name="robots" content="all" />
-    <meta name="author" content="Tencent-ISUX-BJ" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=EDGE, chrome=1" />
-    <...
-[ERROR] No download link found matching '_amd64.*.deb'
+[DEBUG] Fetching from: https://im.qq.com/linuxqq/index.shtml
+[DEBUG] Using download pattern: 
+[DEBUG] Found download link: 
+[ERROR] Failed to extract version from link: 
