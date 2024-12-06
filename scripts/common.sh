@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# 检查并创建必要的目录结构
 create_repo_structure() {
     local package_name=$1
     mkdir -p "pool/${package_name}"
@@ -9,22 +8,45 @@ create_repo_structure() {
     done
 }
 
-# 获取 GitHub 最新版本
-get_latest_version() {
+get_latest_version_d() {
+    local version_url=$1
+    local version_pattern=$2
+    curl -s "$version_url" | grep -oP "$version_pattern" | head -n 1
+}
+download_package_d() {
+    local url=$1
+    local version=$2
+    local arch=$3
+    local package_name=$4
+
+    local download_url=${url/\{version\}/$version}
+
+    echo "Downloading package for ${arch}..."
+    wget -q -O "pool/${package_name}/${package_name}_${version}_${arch}.deb" "$download_url"
+    if [ $? -eq 0 ]; then
+        echo "✓ Successfully downloaded ${arch} package"
+        return 0
+    else
+        echo "✗ Failed to download ${arch} package"
+        return 1
+    fi
+}
+
+get_latest_version_gh() {
     local repo=$1
     curl -s "https://api.github.com/repos/${repo}/releases/latest" | jq -r .tag_name
 }
 
-download_package() {
+download_package_gh() {
     local repo=$1
     local version=$2
     local arch=$3
     local pattern=$4
     local package_name=$5
-    
-    local asset_url=$(curl -s "https://api.github.com/repos/${repo}/releases/latest" | \
+
+    local asset_url=$(curl -s "https://api.github.com/repos/${repo}/releases/latest" |
         jq -r --arg pattern "$pattern" '.assets[] | select(.name | test($pattern)) | .browser_download_url')
-    
+
     if [ ! -z "$asset_url" ]; then
         echo "Downloading package for ${arch}..."
         # 添加 -q 参数隐藏下载进度

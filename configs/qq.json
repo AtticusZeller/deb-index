@@ -1,0 +1,14 @@
+{
+    "name": "qq",
+    "source": {
+        "type": "direct",
+        "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Linux/QQ_{version}_amd64_01.deb",
+        "version_url": "https://im.qq.com/linuxqq/index.shtml",
+        "version_pattern": "QQ_([\\d.]+)_\\d+_amd64"
+    },
+    "package": {
+        "architectures": [
+            "amd64"
+        ]
+    }
+}
