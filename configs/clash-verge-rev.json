@@ -10,8 +10,8 @@
     }
   },
   "package": {
-    "name": "clash-verge",
-    "maintainer": "Atticus Zeller",
+    "name": "clash-verge-rev",
+    "maintainer": "Atticus J. Zeller",
     "section": "net",
     "priority": "optional",
     "architectures": ["amd64", "arm64", "armhf"]
