@@ -65,12 +65,6 @@ Components: main
 Description: Custom APT repository for various packages
 Date: $(date -Ru)
 EOF
-    echo "MD5Sum:" >> Release
-          find . -type f -not -name 'Release' -not -name 'Release.gpg' -exec md5sum {} \; | sed 's/\.\///g' >> Release
-          echo "SHA1:" >> Release
-          find . -type f -not -name 'Release' -not -name 'Release.gpg' -exec sha1sum {} \; | sed 's/\.\///g' >> Release
-          echo "SHA256:" >> Release
-          find . -type f -not -name 'Release' -not -name 'Release.gpg' -exec sha256sum {} \; | sed 's/\.\///g' >> Release
     apt-ftparchive release dists/stable > dists/stable/Release
 }
 
