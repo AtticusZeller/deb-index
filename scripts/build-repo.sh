@@ -1,6 +1,24 @@
 #!/bin/bash
 
+# 确保脚本在正确的目录下运行
+cd "$(dirname "$0")/.." || exit 1
+
+# 源引入通用函数
 source scripts/common.sh
+
+# 处理命令行参数
+if [ "$1" = "--generate-metadata" ]; then
+    generate_repo_metadata
+    exit 0
+fi
+
+# 处理配置文件
+if [ -f "$1" ]; then
+    build_package_repo "$1"
+else
+    echo "Usage: $0 <config-file> or $0 --generate-metadata"
+    exit 1
+fi
 
 build_package_repo() {
     local config_file=$1
