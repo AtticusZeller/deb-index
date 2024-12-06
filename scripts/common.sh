@@ -11,8 +11,20 @@ create_repo_structure() {
 get_latest_version_d() {
     local version_url=$1
     local version_pattern=$2
-    curl -s "$version_url" | grep -oP "$version_pattern" | sort -V | tail -n 1
+
+    echo "Debug: Fetching from URL: $version_url" >&2
+    echo "Debug: Using pattern: $version_pattern" >&2
+
+    local content=$(curl -s "$version_url")
+    echo "Debug: Content received:" >&2
+    echo "$content" | head -n 10 >&2
+
+    local version=$(echo "$content" | grep -oP "$version_pattern" | sort -V | tail -n 1)
+    echo "Debug: Matched version: $version" >&2
+
+    echo "$version"
 }
+
 
 download_package_d() {
     local url=$1
