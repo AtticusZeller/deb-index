@@ -34,17 +34,22 @@ jobs:
 
       - name: Update Repository
         run: |
-          # 创建必要的目录
+          # 初始化必要的目录
           mkdir -p pool/
           mkdir -p dists/
           mkdir -p version-lock/
           
           # 处理每个配置文件
           for config in configs/*.json; do
+            echo "Processing config: $config"
+            # 使用 source 导入通用函数
+            source scripts/common.sh
+            # 调用构建脚本处理配置
             bash scripts/build-repo.sh "$config"
           done
           
           # 生成仓库元数据
+          source scripts/common.sh
           bash scripts/build-repo.sh --generate-metadata
 
       - name: Deploy to GitHub Pages
