@@ -1,33 +1,9 @@
-Date: Fri, 06 Dec 2024 06:18:56 +0000
-MD5Sum:
- 160d239acea49b8fff52d872831b487c               38 Release
- 29a0fa178c46a202f11f92ac9b872733              570 main/binary-amd64/Packages
- c4be86db6dd161d9d18eb7cfe6ee119b              398 main/binary-amd64/Packages.gz
- c61f847c61a8c8456bb086154893c1f6              570 main/binary-arm64/Packages
- 74249171d28698f857819632e0fa9700              397 main/binary-arm64/Packages.gz
- 83dbfb057d9ed56867e2e2f30f7ff2f5              570 main/binary-armhf/Packages
- 8bf0243278d07cad687974890056fb07              399 main/binary-armhf/Packages.gz
-SHA1:
- 28b52e4984a29e4a9ffdb00cdf431f3670589561               38 Release
- a0b5e7b76d58b494a102e0d831e7d4f9055e9dca              570 main/binary-amd64/Packages
- 5c31828acbe4267e11104dfe919b1a5f146d3b85              398 main/binary-amd64/Packages.gz
- 3711a1a793337bd2ec03c8c55c92a4e0bf44cf80              570 main/binary-arm64/Packages
- cdc56a1e9d3d105743e2edba6f0cd21ea2f33166              397 main/binary-arm64/Packages.gz
- 8e681f0f8ad330147e3d207d68a003444d2f031a              570 main/binary-armhf/Packages
- 574fea78cd164584a6df8e2b0dbeff87c3350539              399 main/binary-armhf/Packages.gz
-SHA256:
- ec822c0bfdb302e6127268a010ab46177000fb76410f25a8e9b6a8fb2f3317ff               38 Release
- 0b5f101f7459e62beb16b4b76a021d1dd6f88ce480c5a256a4ec1c7a9d94d167              570 main/binary-amd64/Packages
- 994dbb8ef185d7d40cfc91930b3f9190bf53d3ccffe5bc53d4f87c616b4677a5              398 main/binary-amd64/Packages.gz
- 069ee2509a7aaba41213ede8ba791b3f6d8b8fab85c1999c809ab70153817317              570 main/binary-arm64/Packages
- 0dcfc611fbf115e673f595b34d556a9cfec5cde5f1a089d5649179c699f0fe60              397 main/binary-arm64/Packages.gz
- d16d41ff3936c7fe001fb491fc05ecb4a643ba062ba1c524224d3daf4d4530a9              570 main/binary-armhf/Packages
- f44226cc284301d359acb4ea159ed77eb1c576a7d759e29e94906d34abfb4fa9              399 main/binary-armhf/Packages.gz
-SHA512:
- 09fa9dc622f3f9fd0a935df6c77d1e389e8dca1cea11368a7c5840ed2cf1126f1acca20504e5d5c199b630ade5211fe6dce438e050096f72b7df14d50f73ab27               38 Release
- a1329de402ff28eb694a48a198590fd81e7c9c114abdc8e10a689b3f28729b185a1f78c2762fceccf8d806d04fefb24e704fa99483237b53eaa5a32ebca6bd33              570 main/binary-amd64/Packages
- da0c88f4a54714e8e0f441717a58164f346edec3ba03fe742a52bfab9a60d81562defe76a090514b7b8ddfc1adcf0e0fc3d02b1d80e2ea21cdd33d135d4e736e              398 main/binary-amd64/Packages.gz
- 366a127f71da373bfd1fbe402e64ef4091ef0ae35447b25bf4552f056c419e426ebd0308b38d1a4c025b8df71700c9858061c9e3502bebff19d53bee7407c344              570 main/binary-arm64/Packages
- e5cc37ab95bc957effabb57efd4e3787298989fa39b4a8afd304535ab8abd44ed037af73bd6357abf321e445e36dc3946a06e4d3874a7b4d9b187ed4acb15553              397 main/binary-arm64/Packages.gz
- 87d0f5350d9e120203b88f7ce9b5010c8ef918543616995c1e112562633f9913fbc89bdfc6c0e0b6dd0128885c3eea0fb7d1448704dcc4be6f6a3c54bff405a6              570 main/binary-armhf/Packages
- f7a25ce1d0f191922a1bb7b2e5a35911a4d197d02eb3f1f051ca9398840887537fbf20c2df2679399faa64bb97dcfc96ea228fe543b04ff945a112c54168a176              399 main/binary-armhf/Packages.gz
+Origin: AtticusZeller DEB Index
+Label: Custom DEB Repository
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Custom APT repository for various packages
+Date: Fri, 06 Dec 2024 06:35:07 +0000
