@@ -5,6 +5,7 @@ auto sync debs
 ## Supported packages
 
 - Clash Verge Rev
+- obsidian
 
 ## Add repo
 
