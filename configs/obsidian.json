@@ -9,7 +9,7 @@
     },
     "package": {
         "name": "obsidian",
-        "maintainer": "Obsidian Team",
+        "maintainer": "Dynalist Inc.",
         "section": "editors",
         "priority": "optional",
         "architectures": [

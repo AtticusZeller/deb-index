@@ -11,7 +11,7 @@
     },
     "package": {
         "name": "clash-verge-rev",
-        "maintainer": "clash-verge-rev team",
+        "maintainer": "zzzgydi, wonfen, MystiPanda",
         "section": "net",
         "priority": "optional",
         "architectures": [
