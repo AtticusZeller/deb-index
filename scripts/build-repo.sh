@@ -10,7 +10,7 @@ source scripts/common.sh
 build_package_repo() {
     local config_file=$1
     local package_info=$(cat "$config_file")
-    
+
     # 解析配置
     local package_name=$(echo "$package_info" | jq -r .name)
     local github_repo=$(echo "$package_info" | jq -r .source.repo)
@@ -57,9 +57,11 @@ generate_repo_metadata() {
 
     cd dists/stable
     apt-ftparchive -c "${CONF_FILE}" release . > Release
-    # 创建空的 InRelease 和 Release.gpg 文件来避免警告
-    touch InRelease
-    touch Release.gpg
+
+    # Sign with imported GPG key
+    gpg --batch --yes --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --clearsign -o InRelease Release
+    gpg --batch --yes --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" -abs -o Release.gpg Release
+
     cd ../..
 }
 

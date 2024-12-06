@@ -1,6 +1,6 @@
 # DEB Index
 
-auto sync debs 
+auto sync debs
 
 ## Supported packages
 
@@ -9,12 +9,24 @@ auto sync debs
 ## Add repo
 
 ```bash
-echo "deb [trusted=yes] https://atticuszeller.github.io/deb-index stable main" | \
-    sudo tee /etc/apt/sources.list.d/atticuszeller-deb-index.list
-```
-## Intsall package
-```bash
-sudo apt update
-sudo apt install clash-verge-rev
+curl -fsSL https://atticuszeller.github.io/deb-index/install.sh | sudo bash
 ```
 
+or manually
+
+```bash
+# Add GPG key
+curl -fsSL https://atticuszeller.github.io/deb-index/public.key | sudo apt-key add -
+
+# Add repository
+echo "deb https://atticuszeller.github.io/deb-index stable main" | sudo tee /etc/apt/sources.list.d/deb-index.list
+
+# Update package lists
+sudo apt update
+```
+
+## Intsall package
+
+```bash
+sudo apt install obsidian
+```

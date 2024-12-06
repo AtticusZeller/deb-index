@@ -32,17 +32,22 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
+      - name: Import GPG key
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+          echo "allow-preset-passphrase" > ~/.gnupg/gpg-agent.conf
+          gpg-connect-agent RELOADAGENT /bye
+          echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --sign --armor --output /dev/null /dev/null
+
       - name: Update Repository
         run: |
-          mkdir -p pool/
-          mkdir -p dists/
-          mkdir -p version-lock/
-          
+          mkdir -p {pool,dists,version-lock}/
+
           for config in configs/*.json; do
             echo "Processing config: $config"
             bash scripts/build-repo.sh "$config"
           done
-          
+
           bash scripts/build-repo.sh --generate-metadata
 
       - name: Commit New version
