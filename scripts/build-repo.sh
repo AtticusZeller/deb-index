@@ -21,9 +21,10 @@ build_package_repo() {
         local github_repo=$(echo "$package_info" | jq -r .source.repo)
         new_version=$(get_latest_version_gh "$github_repo")
     else
-        local version_url=$(echo "$package_info" | jq -r .source.version_url)
-        local version_pattern=$(echo "$package_info" | jq -r .source.version_pattern)
-        new_version=$(get_latest_version_d "$version_url" "$version_pattern")
+        version_url=$(jq -r '.source.version_url' "$config")
+        version_pattern=$(jq -r '.source.version_pattern' "$config")
+        download_pattern=$(jq -r '.source.download_pattern' "$config")
+        new_version=$(get_latest_version_d "$version_url" "$version_pattern" "$download_pattern")
     fi
 
     local current_version=$(cat "version-lock/${package_name}.lock" 2>/dev/null || echo "0")
