@@ -30,8 +30,7 @@ sudo apt update
 ## Uninstall
 
 ```bash
-curl -fsSL https://atticuszeller.github.io/deb-index/uninstall.sh | sudo 
-
+curl -fsSL https://atticuszeller.github.io/deb-index/uninstall.sh | sudo bash
 ```
 
 ## Intsall package

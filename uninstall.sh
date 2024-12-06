@@ -12,7 +12,7 @@ REPO_NAME="deb-index"
 
 
 echo "Removing GPG key..."
-apt-key del "1A60ABC73CCFF545"
+rm -f "/etc/apt/keyrings/${REPO_NAME}.gpg"
 
 echo "Removing repository..."
 rm -f "/etc/apt/sources.list.d/${REPO_NAME}.list"
