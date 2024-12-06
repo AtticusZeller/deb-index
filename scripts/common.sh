@@ -15,7 +15,6 @@ get_latest_version() {
     curl -s "https://api.github.com/repos/${repo}/releases/latest" | jq -r .tag_name
 }
 
-# 下载特定架构的包
 download_package() {
     local repo=$1
     local version=$2
@@ -27,9 +26,17 @@ download_package() {
         jq -r --arg pattern "$pattern" '.assets[] | select(.name | test($pattern)) | .browser_download_url')
     
     if [ ! -z "$asset_url" ]; then
-        echo "Downloading from: $asset_url"
-        wget -O "pool/${package_name}/${package_name}_${version}_${arch}.deb" "$asset_url"
-        return 0
+        echo "Downloading package for ${arch}..."
+        # 添加 -q 参数隐藏下载进度
+        wget -q -O "pool/${package_name}/${package_name}_${version}_${arch}.deb" "$asset_url"
+        if [ $? -eq 0 ]; then
+            echo "✓ Successfully downloaded ${arch} package"
+            return 0
+        else
+            echo "✗ Failed to download ${arch} package"
+            return 1
+        fi
     fi
+    echo "! No matching asset found for ${arch}"
     return 1
 }
