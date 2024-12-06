@@ -43,8 +43,12 @@ build_package_repo() {
     echo "Version lock file updated"
 }
 
-# 生成仓库元数据
 generate_repo_metadata() {
+    # 确保目录存在
+    for arch in amd64 arm64 armhf; do
+        mkdir -p "dists/stable/main/binary-${arch}"
+    done
+
     # 为每个架构生成 Packages 文件
     for arch in amd64 arm64 armhf; do
         if ls pool/*/*_${arch}.deb 1> /dev/null 2>&1; then
@@ -52,7 +56,7 @@ generate_repo_metadata() {
             gzip -k -f "dists/stable/main/binary-${arch}/Packages"
         fi
     done
-    
+
     # 生成 Release 文件
     cat > dists/stable/Release << EOF
 Origin: AtticusZeller DEB Index
@@ -65,8 +69,14 @@ Components: main
 Description: Custom APT repository for various packages
 Date: $(date -Ru)
 EOF
-    apt-ftparchive release dists/stable > dists/stable/Release
+
+    # 使用 apt-ftparchive 生成完整的 Release 文件
+    cd dists/stable
+    apt-ftparchive release . > Release.new
+    mv Release.new Release
+    cd ../..
 }
+
 
 # 处理命令行参数
 if [ "$1" = "--generate-metadata" ]; then
