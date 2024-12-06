@@ -1,0 +1,19 @@
+{
+  "name": "clash-verge-rev",
+  "source": {
+    "type": "github",
+    "repo": "clash-verge-rev/clash-verge-rev",
+    "asset_patterns": {
+      "amd64": ".*amd64\\.deb$",
+      "arm64": ".*arm64\\.deb$",
+      "armhf": ".*armhf\\.deb$"
+    }
+  },
+  "package": {
+    "name": "clash-verge",
+    "maintainer": "AtticusZeller",
+    "section": "net",
+    "priority": "optional",
+    "architectures": ["amd64", "arm64", "armhf"]
+  }
+}
