@@ -4,11 +4,10 @@
         "type": "direct",
         "url": "https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_{version}_x86_64.deb",
         "version_url": "https://linux.weixin.qq.com/en",
-        "version_pattern": "WeChatLinux_([0-9.]+)_x86_64"
+        "version_pattern": "WeChatLinux_([0-9.]+)_x86_64",
+        "download_pattern": "href=\"https://dldir1[^\"]*WeChatLinux[^\"]*\\.deb\""
     },
     "package": {
-        "architectures": [
-            "amd64"
-        ]
+        "architectures": ["amd64"]
     }
 }
