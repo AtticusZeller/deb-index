@@ -8,6 +8,8 @@ auto sync debs
 
 ## Add repo
 
+### Install
+
 ```bash
 curl -fsSL https://atticuszeller.github.io/deb-index/install.sh | sudo bash
 ```
@@ -23,6 +25,13 @@ echo "deb https://atticuszeller.github.io/deb-index stable main" | sudo tee /etc
 
 # Update package lists
 sudo apt update
+```
+
+## Uninstall
+
+```bash
+curl -fsSL https://atticuszeller.github.io/deb-index/uninstall.sh | sudo 
+
 ```
 
 ## Intsall package
