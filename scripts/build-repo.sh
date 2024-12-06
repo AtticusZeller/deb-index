@@ -57,6 +57,9 @@ generate_repo_metadata() {
 
     cd dists/stable
     apt-ftparchive -c "${CONF_FILE}" release . > Release
+    # 创建空的 InRelease 和 Release.gpg 文件来避免警告
+    touch InRelease
+    touch Release.gpg
     cd ../..
 }
 
