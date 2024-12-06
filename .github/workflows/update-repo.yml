@@ -34,18 +34,28 @@ jobs:
 
       - name: Update Repository
         run: |
-          # 初始化必要的目录
           mkdir -p pool/
           mkdir -p dists/
           mkdir -p version-lock/
           
-          # 处理每个配置文件
           for config in configs/*.json; do
             echo "Processing config: $config"
             bash scripts/build-repo.sh "$config"
           done
           
           bash scripts/build-repo.sh --generate-metadata
+
+      - name: Commit Version Locks
+        run: |
+          
+          if [[ -n $(git status --porcelain version-lock/) ]]; then
+            echo "Changes detected in version-lock directory"
+            git add version-lock/
+            git commit -m "Update version locks"
+            git push
+          else
+            echo "No changes to commit in version-lock"
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -56,17 +66,3 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy to GitHub Pages'
-
-      - name: Commit Version Locks
-        run: |
-          # 确保在仓库根目录
-          cd $GITHUB_WORKSPACE
-          
-          # 检查是否有更改需要提交
-          if git status --porcelain version-lock/; then
-            git add version-lock/
-            git commit -m "Update version locks"
-            git push
-          else
-            echo "No changes to commit"
-          fi
