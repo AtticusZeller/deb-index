@@ -44,19 +44,8 @@ build_package_repo() {
 }
 
 generate_repo_metadata() {
-    # 创建 apt-ftparchive 配置文件
-    cat > apt-ftparchive.conf << EOF
-APT::FTPArchive::Release {
-  Origin "AtticusZeller DEB Index";
-  Label "Custom DEB Repository";
-  Suite "stable";
-  Codename "stable";
-  Version "1.0";
-  Architectures "amd64 arm64 armhf";
-  Components "main";
-  Description "Custom APT repository for various packages";
-};
-EOF
+    # 假设 apt-ftparchive.conf 在项目根目录
+    CONF_FILE="$(dirname $(dirname $0))/apt-ftparchive.conf"
 
     # 为每个架构生成 Packages 文件
     for arch in amd64 arm64 armhf; do
@@ -69,7 +58,7 @@ EOF
 
     # 使用配置文件生成 Release
     cd dists/stable
-    apt-ftparchive -c ../../apt-ftparchive.conf release . > Release
+    apt-ftparchive -c "$CONF_FILE" release . > Release
 
     # 可选：添加 GPG 签名
     if command -v gpg &> /dev/null; then
@@ -78,6 +67,7 @@ EOF
     fi
     cd ../..
 }
+
 
 
 
