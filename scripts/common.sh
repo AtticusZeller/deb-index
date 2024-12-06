@@ -12,18 +12,15 @@ get_latest_version_d() {
     local version_url=$1
     local version_pattern=$2
 
-    echo "Debug: Fetching from URL: $version_url" >&2
-    echo "Debug: Using pattern: $version_pattern" >&2
+    # 获取HTML内容并提取下载链接
+    local download_link=$(curl -s "$version_url" | grep -o "https://.*_amd64.*\.deb" | head -n 1)
 
-    local content=$(curl -s "$version_url")
-    echo "Debug: Content received:" >&2
-    echo "$content" | head -n 10 >&2
-
-    local version=$(echo "$content" | grep -oP "$version_pattern" | sort -V | tail -n 1)
-    echo "Debug: Matched version: $version" >&2
-
-    echo "$version"
+    # 从下载链接中提取版本号
+    if [[ $download_link =~ $version_pattern ]]; then
+        echo "${BASH_REMATCH[1]}"
+    fi
 }
+
 
 
 download_package_d() {
