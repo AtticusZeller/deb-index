@@ -1,0 +1,46 @@
+name: Update APT Repository
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'configs/**'
+      - 'scripts/**'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev apt-utils
+
+      - name: Update Repository
+        run: |
+          # 处理每个配置文件
+          for config in configs/*.json; do
+            bash scripts/build-repo.sh "$config"
+          done
+          
+          # 生成仓库元数据
+          bash scripts/build-repo.sh --generate-metadata
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          force_orphan: true
+
+      - name: Commit Version Locks
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add version-lock/
+          git commit -m "Update version locks" || true
+          git push
