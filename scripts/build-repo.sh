@@ -65,7 +65,7 @@ Components: main
 Description: Custom APT repository for various packages
 Date: $(date -Ru)
 EOF
-    # apt-ftparchive release dists/stable > dists/stable/Release
+    apt-ftparchive release dists/stable > dists/stable/Release
 }
 
 # 处理命令行参数
