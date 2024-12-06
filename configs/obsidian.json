@@ -9,7 +9,7 @@
   },
   "package": {
     "name": "obsidian",
-    "maintainer": "Obsidian",
+    "maintainer": "Obsidian Team",
     "section": "editors",
     "priority": "optional",
     "architectures": ["amd64"]
