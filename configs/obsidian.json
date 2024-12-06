@@ -1,17 +1,19 @@
 {
-  "name": "obsidian",
-  "source": {
-    "type": "github",
-    "repo": "obsidianmd/obsidian-releases",
-    "asset_patterns": {
-      "amd64": ".*\\.deb$"
-    }
-  },
-  "package": {
     "name": "obsidian",
-    "maintainer": "Obsidian Team",
-    "section": "editors",
-    "priority": "optional",
-    "architectures": ["amd64"]
-  }
+    "source": {
+        "type": "github",
+        "repo": "obsidianmd/obsidian-releases",
+        "asset_patterns": {
+            "amd64": ".*\\.deb$"
+        }
+    },
+    "package": {
+        "name": "obsidian",
+        "maintainer": "Obsidian Team",
+        "section": "editors",
+        "priority": "optional",
+        "architectures": [
+            "amd64"
+        ]
+    }
 }
