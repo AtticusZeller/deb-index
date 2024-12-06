@@ -42,7 +42,6 @@ jobs:
           # 处理每个配置文件
           for config in configs/*.json; do
             echo "Processing config: $config"
-            # 调用构建脚本处理配置
             bash scripts/build-repo.sh "$config"
           done
           
