@@ -1,1 +1,10 @@
-
+[DEBUG] version_url: https://linux.weixin.qq.com/en
+[DEBUG] version_pattern: WeChatLinux_([0-9.]+)_x86_64
+[DEBUG] HTML content fetched (truncated):
+<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Weixin for Linux (Test Version)</title>
+<link rel="stylesheet" href="https://res.wx.qq.com/t/wx_fed/weui-source/res/2.6.15/weui.min.css">
+<style>body{color: var(--weui-FG-0);background-color: var(--weui-BG-0);} a{cursor:pointer;}</style>
+<style>/*! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 sol...
+[ERROR] No download link found matching '_amd64.*.deb'
