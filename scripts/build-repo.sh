@@ -44,44 +44,41 @@ build_package_repo() {
 }
 
 generate_repo_metadata() {
-    # 确保目录存在
-    for arch in amd64 arm64 armhf; do
-        mkdir -p "dists/stable/main/binary-${arch}"
-    done
+    # 创建 apt-ftparchive 配置文件
+    cat > apt-ftparchive.conf << EOF
+APT::FTPArchive::Release {
+  Origin "AtticusZeller DEB Index";
+  Label "Custom DEB Repository";
+  Suite "stable";
+  Codename "stable";
+  Version "1.0";
+  Architectures "amd64 arm64 armhf";
+  Components "main";
+  Description "Custom APT repository for various packages";
+};
+EOF
 
     # 为每个架构生成 Packages 文件
     for arch in amd64 arm64 armhf; do
+        mkdir -p "dists/stable/main/binary-${arch}"
         if ls pool/*/*_${arch}.deb 1> /dev/null 2>&1; then
             dpkg-scanpackages --arch ${arch} pool/ > "dists/stable/main/binary-${arch}/Packages"
             gzip -k -f "dists/stable/main/binary-${arch}/Packages"
         fi
     done
 
-    # 生成临时的基础 Release 文件
-    cat > dists/stable/Release.header << EOF
-Origin: AtticusZeller DEB Index
-Label: Custom DEB Repository
-Suite: stable
-Codename: stable
-Version: 1.0
-Architectures: amd64 arm64 armhf
-Components: main
-Description: Custom APT repository for various packages
-Date: $(date -Ru)
-EOF
+    # 使用配置文件生成 Release
+    cd dists/stable
+    apt-ftparchive -c ../../apt-ftparchive.conf release . > Release
 
-    # 生成校验和部分
-    (
-        cd dists/stable
-        apt-ftparchive release . > Release.sums
-        # 合并头部和校验和
-        cat Release.header > Release
-        # 提取并附加校验和部分
-        sed -n '/^MD5Sum:/,$p' Release.sums >> Release
-        # 清理临时文件
-        rm Release.header Release.sums
-    )
+    # 可选：添加 GPG 签名
+    if command -v gpg &> /dev/null; then
+        gpg --clearsign -o InRelease Release
+        gpg -abs -o Release.gpg Release
+    fi
+    cd ../..
 }
+
 
 
 
