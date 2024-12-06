@@ -10,7 +10,7 @@
     }
   },
   "package": {
-    "name": "clash-verge",
+    "name": "clash-verge-rev",
     "maintainer": "AtticusZeller",
     "section": "net",
     "priority": "optional",
