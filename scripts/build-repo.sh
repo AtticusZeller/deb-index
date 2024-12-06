@@ -6,20 +6,7 @@ cd "$(dirname "$0")/.." || exit 1
 # 源引入通用函数
 source scripts/common.sh
 
-# 处理命令行参数
-if [ "$1" = "--generate-metadata" ]; then
-    generate_repo_metadata
-    exit 0
-fi
-
-# 处理配置文件
-if [ -f "$1" ]; then
-    build_package_repo "$1"
-else
-    echo "Usage: $0 <config-file> or $0 --generate-metadata"
-    exit 1
-fi
-
+# 定义函数
 build_package_repo() {
     local config_file=$1
     local package_info=$(cat "$config_file")
@@ -73,6 +60,20 @@ Architectures: amd64 arm64 armhf
 Components: main
 Description: Custom APT repository for various packages
 EOF
-
+    
     apt-ftparchive release dists/stable > dists/stable/Release
 }
+
+# 处理命令行参数
+if [ "$1" = "--generate-metadata" ]; then
+    generate_repo_metadata
+    exit 0
+fi
+
+# 处理配置文件
+if [ -f "$1" ]; then
+    build_package_repo "$1"
+else
+    echo "Usage: $0 <config-file> or $0 --generate-metadata"
+    exit 1
+fi
