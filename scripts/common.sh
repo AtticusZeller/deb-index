@@ -24,9 +24,10 @@ download_package() {
     local package_name=$5
     
     local asset_url=$(curl -s "https://api.github.com/repos/${repo}/releases/latest" | \
-        jq -r ".assets[] | select(.name | test(\"${pattern}\")) | .browser_download_url")
+        jq -r --arg pattern "$pattern" '.assets[] | select(.name | test($pattern)) | .browser_download_url')
     
     if [ ! -z "$asset_url" ]; then
+        echo "Downloading from: $asset_url"
         wget -O "pool/${package_name}/${package_name}_${version}_${arch}.deb" "$asset_url"
         return 0
     fi
