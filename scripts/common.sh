@@ -7,22 +7,20 @@ create_repo_structure() {
         mkdir -p "dists/stable/main/binary-${arch}"
     done
 }
-# 从直接链接获取版本号
 get_latest_version_d() {
     local version_url=$1
     local version_pattern=$2
-    local download_pattern=$3
 
     echo "[DEBUG] Fetching from: $version_url"
-    echo "[DEBUG] Using download pattern: $download_pattern"
     
-    local html_content=$(curl -s "$version_url")
-    local download_link=$(echo "$html_content" | grep -o "$download_pattern" | head -n 1)
+    # 获取HTML内容并直接匹配deb包链接
+    local download_link=$(curl -s "$version_url" | grep -o 'https://[^"]*\.deb"' | grep -o 'https://.*\.deb' | grep -E 'amd64|x86_64' | head -n 1)
     
     echo "[DEBUG] Found download link: $download_link"
     
     if [[ $download_link =~ $version_pattern ]]; then
         echo "${BASH_REMATCH[1]}"
+        return 0
     else
         echo "[ERROR] Failed to extract version from link: $download_link"
         return 1

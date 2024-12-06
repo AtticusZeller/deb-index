@@ -23,8 +23,7 @@ build_package_repo() {
     else
         version_url=$(jq -r '.source.version_url' "$config")
         version_pattern=$(jq -r '.source.version_pattern' "$config")
-        download_pattern=$(jq -r '.source.download_pattern' "$config")
-        new_version=$(get_latest_version_d "$version_url" "$version_pattern" "$download_pattern")
+        new_version=$(get_latest_version_d "$version_url" "$version_pattern")
     fi
 
     local current_version=$(cat "version-lock/${package_name}.lock" 2>/dev/null || echo "0")
