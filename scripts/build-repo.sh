@@ -63,6 +63,7 @@ Version: 1.0
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Custom APT repository for various packages
+Date: $(date -Ru)
 EOF
     
     apt-ftparchive release dists/stable > dists/stable/Release
