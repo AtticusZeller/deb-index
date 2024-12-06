@@ -45,12 +45,14 @@ jobs:
           
           bash scripts/build-repo.sh --generate-metadata
 
-      - name: Commit Version Locks
+      - name: Commit New Sources
         run: |
           
           if [[ -n $(git status --porcelain version-lock/) ]]; then
             echo "Changes detected in version-lock directory"
             git add version-lock/
+            git add dists/
+            git add pool/
             git commit -m "Update version locks"
             git push
           else
