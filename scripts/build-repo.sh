@@ -19,11 +19,11 @@ build_package_repo() {
     local new_version
     if [ "$source_type" = "github" ]; then
         local github_repo=$(echo "$package_info" | jq -r .source.repo)
-        new_version=$(get_latest_version "$github_repo")
+        new_version=$(get_latest_version_gh "$github_repo")
     else
         local version_url=$(echo "$package_info" | jq -r .source.version_url)
         local version_pattern=$(echo "$package_info" | jq -r .source.version_pattern)
-        new_version=$(get_direct_version "$version_url" "$version_pattern")
+        new_version=$(get_latest_version_d "$version_url" "$version_pattern")
     fi
 
     local current_version=$(cat "version-lock/${package_name}.lock" 2>/dev/null || echo "0")
@@ -42,10 +42,10 @@ build_package_repo() {
     for arch in $architectures; do
         if [ "$source_type" = "github" ]; then
             local pattern=$(echo "$package_info" | jq -r ".source.asset_patterns.${arch}")
-            download_package "$github_repo" "$new_version" "$arch" "$pattern" "$package_name"
+            download_package_gh "$github_repo" "$new_version" "$arch" "$pattern" "$package_name"
         else
             local url=$(echo "$package_info" | jq -r .source.url)
-            download_direct_package "$url" "$new_version" "$arch" "$package_name"
+            download_package_d "$url" "$new_version" "$arch" "$package_name"
         fi
     done
 
