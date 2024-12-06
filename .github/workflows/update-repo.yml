@@ -45,7 +45,7 @@ jobs:
           
           bash scripts/build-repo.sh --generate-metadata
 
-      - name: Commit New Sources
+      - name: Commit New version
         run: |
           
           if [[ -n $(git status --porcelain version-lock/) ]]; then
@@ -53,7 +53,7 @@ jobs:
             git add version-lock/
             git add dists/
             git add pool/
-            git commit -m "Update version locks"
+            git commit -m "Update new version"
             git push
           else
             echo "No changes to commit in version-lock"
