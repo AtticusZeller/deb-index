@@ -59,6 +59,14 @@ jobs:
             echo "No changes to commit in version-lock"
           fi
 
+      - name: Create Jekyll config
+        run: |
+          cat > _config.yml << 'EOF'
+          title: DEB Package Repository
+          description: Custom APT repository for various packages
+          show_downloads: true
+          EOF
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -68,5 +76,4 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy to GitHub Pages'
-          enable_jekyll: false 
-
+          enable_jekyll: true 
