@@ -57,8 +57,8 @@ generate_repo_metadata() {
         fi
     done
 
-    # 生成 Release 文件
-    cat > dists/stable/Release << EOF
+    # 生成临时的基础 Release 文件
+    cat > dists/stable/Release.header << EOF
 Origin: AtticusZeller DEB Index
 Label: Custom DEB Repository
 Suite: stable
@@ -70,12 +70,19 @@ Description: Custom APT repository for various packages
 Date: $(date -Ru)
 EOF
 
-    # 使用 apt-ftparchive 生成完整的 Release 文件
-    cd dists/stable
-    apt-ftparchive release . > Release.new
-    mv Release.new Release
-    cd ../..
+    # 生成校验和部分
+    (
+        cd dists/stable
+        apt-ftparchive release . > Release.sums
+        # 合并头部和校验和
+        cat Release.header > Release
+        # 提取并附加校验和部分
+        sed -n '/^MD5Sum:/,$p' Release.sums >> Release
+        # 清理临时文件
+        rm Release.header Release.sums
+    )
 }
+
 
 
 # 处理命令行参数
