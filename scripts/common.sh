@@ -7,45 +7,6 @@ create_repo_structure() {
         mkdir -p "dists/stable/main/binary-${arch}"
     done
 }
-get_latest_version_d() {
-    local version_url=$1
-    local version_pattern=$2
-
-    echo "[DEBUG] Fetching from: $version_url"
-    
-    # 获取HTML内容并直接匹配deb包链接
-    local download_link=$(curl -s "$version_url" | grep -o 'https://[^"]*\.deb"' | grep -o 'https://.*\.deb' | grep -E 'amd64|x86_64' | head -n 1)
-    
-    echo "[DEBUG] Found download link: $download_link"
-    
-    if [[ $download_link =~ $version_pattern ]]; then
-        echo "${BASH_REMATCH[1]}"
-        return 0
-    else
-        echo "[ERROR] Failed to extract version from link: $download_link"
-        return 1
-    fi
-}
-
-# 下载包
-download_package_d() {
-    local url=$1
-    local version=$2
-    local arch=$3
-    local package_name=$4
-
-    local download_url=${url/\{version\}/$version}
-    echo "Downloading package for ${arch}..."
-
-    wget -q -O "pool/${package_name}/${package_name}_${version}_${arch}.deb" "$download_url"
-    if [ $? -eq 0 ]; then
-        echo "✓ Successfully downloaded ${arch} package"
-        return 0
-    else
-        echo "✗ Failed to download ${arch} package"
-        return 1
-    fi
-}
 
 get_latest_version_gh() {
     local repo=$1
@@ -64,7 +25,6 @@ download_package_gh() {
 
     if [ ! -z "$asset_url" ]; then
         echo "Downloading package for ${arch}..."
-        # 添加 -q 参数隐藏下载进度
         wget -q -O "pool/${package_name}/${package_name}_${version}_${arch}.deb" "$asset_url"
         if [ $? -eq 0 ]; then
             echo "✓ Successfully downloaded ${arch} package"
