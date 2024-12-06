@@ -44,10 +44,9 @@ build_package_repo() {
 }
 
 generate_repo_metadata() {
-    # 假设 apt-ftparchive.conf 在项目根目录
-    CONF_FILE="$(dirname $(dirname $0))/apt-ftparchive.conf"
+    ROOT_DIR="$(cd "$(dirname "$(dirname "$0")")" && pwd)"
+    CONF_FILE="${ROOT_DIR}/apt-ftparchive.conf"
 
-    # 为每个架构生成 Packages 文件
     for arch in amd64 arm64 armhf; do
         mkdir -p "dists/stable/main/binary-${arch}"
         if ls pool/*/*_${arch}.deb 1> /dev/null 2>&1; then
@@ -56,17 +55,11 @@ generate_repo_metadata() {
         fi
     done
 
-    # 使用配置文件生成 Release
     cd dists/stable
-    apt-ftparchive -c "$CONF_FILE" release . > Release
-
-    # 可选：添加 GPG 签名
-    if command -v gpg &> /dev/null; then
-        gpg --clearsign -o InRelease Release
-        gpg -abs -o Release.gpg Release
-    fi
+    apt-ftparchive -c "${CONF_FILE}" release . > Release
     cd ../..
 }
+
 
 
 
