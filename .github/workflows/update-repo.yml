@@ -8,20 +8,37 @@ on:
     paths:
       - 'configs/**'
       - 'scripts/**'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Install Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y dpkg-dev apt-utils
 
+      - name: Setup Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
       - name: Update Repository
         run: |
+          # 创建必要的目录
+          mkdir -p pool/
+          mkdir -p dists/
+          mkdir -p version-lock/
+          
           # 处理每个配置文件
           for config in configs/*.json; do
             bash scripts/build-repo.sh "$config"
@@ -36,11 +53,20 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy to GitHub Pages'
 
       - name: Commit Version Locks
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add version-lock/
-          git commit -m "Update version locks" || true
-          git push
+          # 确保在仓库根目录
+          cd $GITHUB_WORKSPACE
+          
+          # 检查是否有更改需要提交
+          if git status --porcelain version-lock/; then
+            git add version-lock/
+            git commit -m "Update version locks"
+            git push
+          else
+            echo "No changes to commit"
+          fi
