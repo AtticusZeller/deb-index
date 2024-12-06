@@ -11,8 +11,9 @@ create_repo_structure() {
 get_latest_version_d() {
     local version_url=$1
     local version_pattern=$2
-    curl -s "$version_url" | grep -oP "$version_pattern" | head -n 1
+    curl -s "$version_url" | grep -oP "$version_pattern" | sort -V | tail -n 1
 }
+
 download_package_d() {
     local url=$1
     local version=$2

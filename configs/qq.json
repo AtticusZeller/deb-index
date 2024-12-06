@@ -4,7 +4,7 @@
         "type": "direct",
         "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Linux/QQ_{version}_amd64_01.deb",
         "version_url": "https://dldir1.qq.com/qqfile/qq/QQNT/Linux/",
-        "version_pattern": "QQ_(\\d+\\.\\d+\\.\\d+_\\d+)_amd64"
+        "version_pattern": "QQ_([0-9.]+_[0-9]+)_amd64_01\\.deb"
     },
     "package": {
         "architectures": [
