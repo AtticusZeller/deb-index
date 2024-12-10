@@ -49,17 +49,12 @@ jobs:
 
       - name: Commit New version
         run: |
-          
-          if [[ -n $(git status --porcelain version-lock/) ]]; then
-            echo "Changes detected in version-lock directory"
-            git add version-lock/
-            git add dists/
-            git add pool/
-            git commit -m "Update new version"
-            git push
-          else
-            echo "No changes to commit in version-lock"
-          fi
+          git add version-lock/
+          git add dists/
+          git add pool/
+          git commit -m "Update new version"
+          git push
+
 
       - name: Create Jekyll config
         run: |
