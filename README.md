@@ -4,7 +4,7 @@ auto sync debs
 
 ## Supported packages
 
-- Clash Verge Rev
+- clash-verge-rev
 - obsidian
 - mihomo
 
