@@ -6,6 +6,7 @@ auto sync debs
 
 - Clash Verge Rev
 - obsidian
+- mihomo
 
 ## Add repo
 
