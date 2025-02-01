@@ -30,17 +30,17 @@ Homepage: https://wiki.metacubex.one/
 Description: The universal proxy platform.
 
 Package: obsidian
-Version: 1.8.3
+Version: 1.8.4
 Architecture: amd64
 Maintainer: Dynalist Inc.
 Installed-Size: 291633
 Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
 Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_v1.8.3_amd64.deb
-Size: 80568512
-MD5sum: 081824539786dae63fe62093e6d95d3b
-SHA1: 3696ba42d9bcaa3acbf572c99ac7ff3ce1331776
-SHA256: ee3d52544339249a2e816917ef0281ef7c63509f9ab511145f94ff1ba31c5b9f
+Filename: pool/obsidian/obsidian_v1.8.4_amd64.deb
+Size: 80570924
+MD5sum: 204cca3f6df6b469e6590933eeba3581
+SHA1: a0bfeef740f769aa9bee320a229ae57ded5294cb
+SHA256: be35311cf2b48500dfc05c469a0431ebdfbd8a94bca47007136ad5f2b2a21b32
 Section: default
 Priority: optional
 Homepage: https://obsidian.md
