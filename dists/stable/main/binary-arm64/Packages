@@ -1,17 +1,17 @@
 Package: clash-verge
-Version: 2.0.3
+Version: 2.1.1
 Architecture: arm64
 Maintainer: zzzgydi, wonfen, MystiPanda
-Installed-Size: 108271
+Installed-Size: 109967
 Depends: openssl, libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
 Conflicts: clash-verge
 Replaces: clash-verge
 Provides: clash-verge
-Filename: pool/clash-verge-rev/clash-verge-rev_v2.0.3_arm64.deb
-Size: 42691082
-MD5sum: 3661168ad20282a984ca76d342d57917
-SHA1: 2e1018c66f44f9431f6454b2a54c34005de6d67b
-SHA256: f74db703aa21770978eb508fc8a75ecbdd9346d72a51d766d88cb4eed4086486
+Filename: pool/clash-verge-rev/clash-verge-rev_v2.1.1_arm64.deb
+Size: 43287048
+MD5sum: 990b2a1ba9f1457bed0936dc7a1c7bb1
+SHA1: 6fe52171c93488489f6198d43ddf9bd4bfdcd1ab
+SHA256: 7b3ccfced7355d48e69efcea561c40f34a3dca5e5a7d25d163b11b98ab74c3e6
 Priority: optional
 Description: Clash Verge Rev
  Clash Verge Rev
