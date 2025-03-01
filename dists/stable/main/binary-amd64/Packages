@@ -1,0 +1,62 @@
+Package: clash-verge
+Version: 2.1.2
+Architecture: amd64
+Maintainer: zzzgydi, wonfen, MystiPanda
+Installed-Size: 115393
+Depends: openssl, libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Conflicts: clash-verge
+Replaces: clash-verge
+Provides: clash-verge
+Filename: pool/clash-verge-rev/clash-verge-rev_v2.1.2_amd64.deb
+Size: 45828198
+MD5sum: 865524f3cfdac5b73c6a53c244c0aa97
+SHA1: 58e60bc9bbbb903079d5347db76fc8fd1f83986e
+SHA256: 94b824ecfd8648d0c9c52093155239989fabff96280af5589fe7731695f0ece6
+Priority: optional
+Description: Clash Verge Rev
+ Clash Verge Rev
+
+Package: mihomo
+Version: 1.19.2-v1.19.2
+Architecture: amd64
+Maintainer: MetaCubeX <none@example.com>
+Filename: pool/mihomo/mihomo_v1.19.2_amd64.deb
+Size: 11567850
+MD5sum: a6260c84d6a63b082eaeb5923ee6dcfb
+SHA1: f2c38512c43acaaeb97f009e5022c05e95bad33e
+SHA256: ecf62b7f7f0019d4536a4f8217d4f06cd25f80e5b847c3cb7e6fb454d3b16d34
+Priority: extra
+Homepage: https://wiki.metacubex.one/
+Description: The universal proxy platform.
+
+Package: obsidian
+Version: 1.8.7
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291651
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_v1.8.7_amd64.deb
+Size: 80565332
+MD5sum: 8f3cb0fb5590b5e340744ab8b1ac80ce
+SHA1: f0b5de797afe9beb2c12ddcd168a5a95fb473d4f
+SHA256: 39ed20205fc2abc9f98275bb890eb182856231a4359df5f2fbd3672c8ac99a74
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: v2rayN
+Version: 7.9.3
+Architecture: amd64
+Maintainer: https://github.com/2dust/v2rayN
+Filename: pool/v2rayN/v2rayN_7.9.3_amd64.deb
+Size: 70685676
+MD5sum: 981cffa0dd11d2254cc3ecf9d7902b26
+SHA1: f0be205dd43c77f285cb75e0beec916c53f331e0
+SHA256: b40688e6d955172bde81a5d43dc25d0a8a5c4d88dd92f96b96ef928e704e2acf
+Description: A GUI client for Windows and Linux, support Xray core and sing-box-core and others
+
