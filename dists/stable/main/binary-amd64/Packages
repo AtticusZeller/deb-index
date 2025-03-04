@@ -17,14 +17,14 @@ Description: Clash Verge Rev
  Clash Verge Rev
 
 Package: mihomo
-Version: 1.19.2-v1.19.2
+Version: 1.19.3-v1.19.3
 Architecture: amd64
 Maintainer: MetaCubeX <none@example.com>
-Filename: pool/mihomo/mihomo_v1.19.2_amd64.deb
-Size: 11567850
-MD5sum: a6260c84d6a63b082eaeb5923ee6dcfb
-SHA1: f2c38512c43acaaeb97f009e5022c05e95bad33e
-SHA256: ecf62b7f7f0019d4536a4f8217d4f06cd25f80e5b847c3cb7e6fb454d3b16d34
+Filename: pool/mihomo/mihomo_v1.19.3_amd64.deb
+Size: 11902782
+MD5sum: 3b8919caf20b86311e8c23937c10e1d1
+SHA1: 0e61e89a53f6f1ead6b06e1ad29883fbe615a70d
+SHA256: 4301f9a57169a04a2419acf3a998425d4fe632fa10bed09e16d6d75d6596f4fc
 Priority: extra
 Homepage: https://wiki.metacubex.one/
 Description: The universal proxy platform.
