@@ -50,13 +50,13 @@ License: UNLICENSED
 Vendor: Dynalist Inc.
 
 Package: v2rayN
-Version: 7.9.3
+Version: 7.10.4
 Architecture: amd64
 Maintainer: https://github.com/2dust/v2rayN
-Filename: pool/v2rayN/v2rayN_7.9.3_amd64.deb
-Size: 70685676
-MD5sum: 981cffa0dd11d2254cc3ecf9d7902b26
-SHA1: f0be205dd43c77f285cb75e0beec916c53f331e0
-SHA256: b40688e6d955172bde81a5d43dc25d0a8a5c4d88dd92f96b96ef928e704e2acf
+Filename: pool/v2rayN/v2rayN_7.10.4_amd64.deb
+Size: 70710812
+MD5sum: bb24a1470360fc13845f8afcd60eadf8
+SHA1: d462b05bd2dd9f82842f1730f85347a4f47f0a3c
+SHA256: ec86b083558bb9695de1f90567e1344ca51be322c4ceb3db5f1925c4c666ab1f
 Description: A GUI client for Windows and Linux, support Xray core and sing-box-core and others
 
