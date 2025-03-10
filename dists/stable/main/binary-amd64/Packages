@@ -1,0 +1,49 @@
+Package: clash-verge
+Version: 2.1.2
+Architecture: amd64
+Maintainer: zzzgydi, wonfen, MystiPanda
+Installed-Size: 115393
+Depends: openssl, libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Conflicts: clash-verge
+Replaces: clash-verge
+Provides: clash-verge
+Filename: pool/clash-verge-rev/clash-verge-rev_v2.1.2_amd64.deb
+Size: 45831328
+MD5sum: 99661a70ddf4ea3c7791e2ff4b2b82ad
+SHA1: ed820ebe01c17b114e9d7c1435779de1f0fea969
+SHA256: 573d043bd03b1276f2d5815ec5e8e1791111fa3e2d6083af055209432395b30f
+Priority: optional
+Description: Clash Verge Rev
+ Clash Verge Rev
+
+Package: obsidian
+Version: 1.8.9
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291148
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_v1.8.9_amd64.deb
+Size: 80266718
+MD5sum: 096d98f4f5eebf8f5bfc197779d71884
+SHA1: f67fe03f012dc4654324642ab17b3016d92109b9
+SHA256: eda25a4a390427555d3ce89c96289557bdc69beb900e85aed33e66072c97e2fe
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: v2rayN
+Version: 7.10.4
+Architecture: amd64
+Maintainer: https://github.com/2dust/v2rayN
+Filename: pool/v2rayN/v2rayN_7.10.4_amd64.deb
+Size: 70710812
+MD5sum: bb24a1470360fc13845f8afcd60eadf8
+SHA1: d462b05bd2dd9f82842f1730f85347a4f47f0a3c
+SHA256: ec86b083558bb9695de1f90567e1344ca51be322c4ceb3db5f1925c4c666ab1f
+Description: A GUI client for Windows and Linux, support Xray core and sing-box-core and others
+
