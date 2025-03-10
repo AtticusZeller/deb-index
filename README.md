@@ -6,7 +6,6 @@ auto sync debs
 
 * clash-verge-rev
 * obsidian
-* mihomo
 * v2rayN
 
 ## Add repo
