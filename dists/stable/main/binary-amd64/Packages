@@ -1,20 +1,18 @@
-Package: clash-verge
-Version: 2.1.2
+Package: alacritty
+Version: 0.15.1
 Architecture: amd64
-Maintainer: zzzgydi, wonfen, MystiPanda
-Installed-Size: 115393
-Depends: openssl, libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Conflicts: clash-verge
-Replaces: clash-verge
-Provides: clash-verge
-Filename: pool/clash-verge-rev/clash-verge-rev_v2.1.2_amd64.deb
-Size: 45831328
-MD5sum: 99661a70ddf4ea3c7791e2ff4b2b82ad
-SHA1: ed820ebe01c17b114e9d7c1435779de1f0fea969
-SHA256: 573d043bd03b1276f2d5815ec5e8e1791111fa3e2d6083af055209432395b30f
+Maintainer: Your Name <your.email@example.com>
+Depends: libc6
+Filename: pool/alacritty/alacritty_v0.15.1_amd64.deb
+Size: 10348032
+MD5sum: 36e2e808a5d6689274782b5646fd7132
+SHA1: c7845ca0c391cbbedbb8df23ee9f8d613ad4294b
+SHA256: e988ba897ccf97370ec04a1a2d919e19d513f3be8b035632d99adefa82879dd0
+Section: utils
 Priority: optional
-Description: Clash Verge Rev
- Clash Verge Rev
+Description: GPU-accelerated terminal emulator
+ Alacritty is a modern terminal emulator that
+ utilizes GPU acceleration for improved performance.
 
 Package: obsidian
 Version: 1.8.9
