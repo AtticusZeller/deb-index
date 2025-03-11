@@ -4,9 +4,9 @@ auto sync debs
 
 ## Supported packages
 
-* clash-verge-rev
 * obsidian
 * v2rayN
+* alacritty
 
 ## Add repo
 
