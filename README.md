@@ -35,7 +35,7 @@ sudo apt update
 curl -fsSL https://docs.atticux.me/deb-index/uninstall.sh | sudo bash
 ```
 
-## Intsall package
+## Install package
 
 ```bash
 sudo apt install obsidian
