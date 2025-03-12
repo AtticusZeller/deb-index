@@ -1,5 +1,36 @@
 #!/bin/bash
 
+save_versions_to_lock() {
+    local package_name=$1
+    local minor_version=$2
+    local downloaded_versions=$3
+
+    echo "minor_version: $minor_version" > "version-lock/${package_name}.lock"
+    echo "versions:" >> "version-lock/${package_name}.lock"
+    for version in $downloaded_versions; do
+        echo "  - $version" >> "version-lock/${package_name}.lock"
+    done
+}
+
+get_downloaded_versions() {
+    local package_name=$1
+    if [ ! -f "version-lock/${package_name}.lock" ]; then
+        return
+    fi
+
+    grep "^  - " "version-lock/${package_name}.lock" | sed 's/^  - //'
+}
+
+get_locked_minor_version() {
+    local package_name=$1
+    if [ ! -f "version-lock/${package_name}.lock" ]; then
+        echo "0"
+        return
+    fi
+
+    grep "^minor_version: " "version-lock/${package_name}.lock" | sed 's/^minor_version: //'
+}
+
 # Get the minor version from a full version string (e.g., 1.15.3 -> 1.15)
 get_minor_version() {
     local full_version=$1
@@ -13,17 +44,17 @@ get_minor_version() {
 get_versions_by_minor() {
     local repo=$1
     local minor_version=$2
-    
+
     # Get all releases
     local all_releases=$(curl -s "https://api.github.com/repos/${repo}/releases" | jq -r '.[].tag_name')
-    
+
     # Filter releases by minor version
     for version in $all_releases; do
         # Remove leading 'v' if present
         clean_version=${version#v}
         # Get minor version
         ver_minor=$(get_minor_version "$version")
-        
+
         if [ "$ver_minor" = "$minor_version" ]; then
             echo "$version"
         fi
@@ -43,8 +74,8 @@ get_assets_for_version() {
     local version=$2
     local arch=$3
     local pattern=$4
-    
+
     # Get the specific release by tag
-    curl -s "https://api.github.com/repos/${repo}/releases/tags/${version}" | 
+    curl -s "https://api.github.com/repos/${repo}/releases/tags/${version}" |
         jq -r --arg pattern "$pattern" '.assets[] | select(.name | test($pattern)) | .browser_download_url'
 }
