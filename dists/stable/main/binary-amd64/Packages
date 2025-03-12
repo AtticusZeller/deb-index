@@ -34,14 +34,19 @@ Description:
 License: UNLICENSED
 Vendor: Dynalist Inc.
 
-Package: v2rayN
-Version: 7.10.4
+Package: sing-box
+Version: 1.11.5
 Architecture: amd64
-Maintainer: https://github.com/2dust/v2rayN
-Filename: pool/v2rayN/v2rayN_7.10.4_amd64.deb
-Size: 70710812
-MD5sum: bb24a1470360fc13845f8afcd60eadf8
-SHA1: d462b05bd2dd9f82842f1730f85347a4f47f0a3c
-SHA256: ec86b083558bb9695de1f90567e1344ca51be322c4ceb3db5f1925c4c666ab1f
-Description: A GUI client for Windows and Linux, support Xray core and sing-box-core and others
+Bugs: https://github.com/SagerNet/sing-box/issues
+Maintainer: nekohasekai <contact-git@sekai.icu>
+Installed-Size: 32854
+Filename: pool/sing-box/sing-box_v1.11.5_amd64.deb
+Size: 12540444
+MD5sum: cea415adad413c59c60a9aa9acfd686d
+SHA1: 5dacb7b7e81df8f1e5e21dc86fc86d716fb98d61
+SHA256: 49deffa6c2a059a77dca71c0245a9e60161f641abdd13f3c4e1690f6668db9e0
+Priority: extra
+Homepage: https://sing-box.sagernet.org/
+Description: The universal proxy platform.
+License: GPLv3 or later
 
