@@ -5,7 +5,7 @@ auto sync debs
 ## Supported packages
 
 * obsidian
-* v2rayN
+* sing-box
 * alacritty
 
 ## Add repo

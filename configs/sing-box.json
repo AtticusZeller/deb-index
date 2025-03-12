@@ -1,0 +1,19 @@
+{
+    "name": "sing-box",
+    "source": {
+        "type": "github",
+        "repo": "SagerNet/sing-box",
+        "asset_patterns": {
+            "amd64": "^sing-box_\\d+\\.\\d+\\.\\d+_linux_amd64\\.deb$"
+        }
+    },
+    "package": {
+        "name": "sing-box",
+        "maintainer": "nekohasekai",
+        "section": "net",
+        "priority": "optional",
+        "architectures": [
+            "amd64"
+        ]
+    }
+}
