@@ -40,7 +40,7 @@ Architecture: amd64
 Bugs: https://github.com/SagerNet/sing-box/issues
 Maintainer: nekohasekai <contact-git@sekai.icu>
 Installed-Size: 32854
-Filename: pool/sing-box/sing-box_v1.11.5_amd64.deb
+Filename: pool/sing-box/sing-box_1.11.5_amd64.deb
 Size: 12540444
 MD5sum: cea415adad413c59c60a9aa9acfd686d
 SHA1: 5dacb7b7e81df8f1e5e21dc86fc86d716fb98d61
