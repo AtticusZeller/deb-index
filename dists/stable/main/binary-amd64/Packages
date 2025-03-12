@@ -3,7 +3,7 @@ Version: 0.15.1
 Architecture: amd64
 Maintainer: Your Name <your.email@example.com>
 Depends: libc6
-Filename: pool/alacritty/alacritty_v0.15.1_amd64.deb
+Filename: pool/alacritty/alacritty_0.15.1_amd64.deb
 Size: 10348032
 MD5sum: 36e2e808a5d6689274782b5646fd7132
 SHA1: c7845ca0c391cbbedbb8df23ee9f8d613ad4294b
@@ -21,7 +21,7 @@ Maintainer: Dynalist Inc.
 Installed-Size: 291148
 Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
 Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_v1.8.9_amd64.deb
+Filename: pool/obsidian/obsidian_1.8.9_amd64.deb
 Size: 80266718
 MD5sum: 096d98f4f5eebf8f5bfc197779d71884
 SHA1: f67fe03f012dc4654324642ab17b3016d92109b9
