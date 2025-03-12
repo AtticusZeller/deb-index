@@ -98,7 +98,7 @@ generate_repo_metadata() {
     for arch in amd64 arm64 armhf; do
         mkdir -p "dists/stable/main/binary-${arch}"
         if ls pool/*/*_${arch}.deb 1>/dev/null 2>&1; then
-            dpkg-scanpackages --arch ${arch} pool/ > "dists/stable/main/binary-${arch}/Packages"
+            dpkg-scanpackages --multiversion --arch ${arch} pool/ > "dists/stable/main/binary-${arch}/Packages"
             gzip -k -f "dists/stable/main/binary-${arch}/Packages"
         fi
     done
