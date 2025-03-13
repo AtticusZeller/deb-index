@@ -15,6 +15,66 @@ Description: GPU-accelerated terminal emulator
  utilizes GPU acceleration for improved performance.
 
 Package: obsidian
+Version: 1.8.3
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291633
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.3_amd64.deb
+Size: 80568512
+MD5sum: 081824539786dae63fe62093e6d95d3b
+SHA1: 3696ba42d9bcaa3acbf572c99ac7ff3ce1331776
+SHA256: ee3d52544339249a2e816917ef0281ef7c63509f9ab511145f94ff1ba31c5b9f
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.4
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291633
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.4_amd64.deb
+Size: 80570924
+MD5sum: 204cca3f6df6b469e6590933eeba3581
+SHA1: a0bfeef740f769aa9bee320a229ae57ded5294cb
+SHA256: be35311cf2b48500dfc05c469a0431ebdfbd8a94bca47007136ad5f2b2a21b32
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.7
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291651
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.7_amd64.deb
+Size: 80565332
+MD5sum: 8f3cb0fb5590b5e340744ab8b1ac80ce
+SHA1: f0b5de797afe9beb2c12ddcd168a5a95fb473d4f
+SHA256: 39ed20205fc2abc9f98275bb890eb182856231a4359df5f2fbd3672c8ac99a74
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
 Version: 1.8.9
 Architecture: amd64
 Maintainer: Dynalist Inc.
@@ -37,16 +97,13 @@ Vendor: Dynalist Inc.
 Package: sing-box
 Version: 1.11.5
 Architecture: amd64
-Bugs: https://github.com/SagerNet/sing-box/issues
-Maintainer: nekohasekai <contact-git@sekai.icu>
-Installed-Size: 32854
+Maintainer: SagerNet
 Filename: pool/sing-box/sing-box_1.11.5_amd64.deb
-Size: 12540444
-MD5sum: cea415adad413c59c60a9aa9acfd686d
-SHA1: 5dacb7b7e81df8f1e5e21dc86fc86d716fb98d61
-SHA256: 49deffa6c2a059a77dca71c0245a9e60161f641abdd13f3c4e1690f6668db9e0
-Priority: extra
-Homepage: https://sing-box.sagernet.org/
+Size: 7927464
+MD5sum: 96998906b5ae4736bfbc21f2c98be7db
+SHA1: e0026f5b6b7e7dbe1827714cce30f2190b50a1ee
+SHA256: be4e09c69760f016f2f6a10c21e11ba85f2d3816f9ab524e3e14278c9da549f2
+Section: net
+Priority: optional
 Description: The universal proxy platform.
-License: GPLv3 or later
 
