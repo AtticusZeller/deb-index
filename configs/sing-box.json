@@ -2,9 +2,9 @@
     "name": "sing-box",
     "source": {
         "type": "github",
-        "repo": "SagerNet/sing-box",
+        "repo": "atticuszeller/sing-box-deb",
         "asset_patterns": {
-            "amd64": "^sing-box_\\d+\\.\\d+\\.\\d+_linux_amd64\\.deb$"
+            "amd64": "^sing-box_\\d+\\.\\d+\\.\\d+_amd64\\.deb$"
         }
     },
     "package": {
