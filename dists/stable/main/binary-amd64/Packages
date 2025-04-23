@@ -15,6 +15,26 @@ Description: GPU-accelerated terminal emulator
  utilizes GPU acceleration for improved performance.
 
 Package: obsidian
+Version: 1.8.10
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 293235
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.10_amd64.deb
+Size: 80536530
+MD5sum: 76f769c873431b0bd2b3207d11da20ef
+SHA1: edd62fc26b4825af1599774fdec83e9e626e4672
+SHA256: da19b2755013e9def37271cf04ce7485c03a22fa02b0951e4108884dcd1bd774
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
 Version: 1.8.3
 Architecture: amd64
 Maintainer: Dynalist Inc.
