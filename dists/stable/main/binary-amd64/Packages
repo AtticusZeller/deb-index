@@ -115,6 +115,19 @@ License: UNLICENSED
 Vendor: Dynalist Inc.
 
 Package: sing-box
+Version: 1.11.10
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.10_amd64.deb
+Size: 7934538
+MD5sum: 27f7f82e8151a3f72e80997ebac77fc2
+SHA1: b4bd2332375f72a8825dee82ed67d8aebce70c96
+SHA256: 6dbd0ca8b94f3a3984a157afbd8144d2226520a792d3b80385ad12c4739bb3ee
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
 Version: 1.11.5
 Architecture: amd64
 Maintainer: SagerNet
