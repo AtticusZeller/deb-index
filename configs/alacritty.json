@@ -1,0 +1,19 @@
+{
+    "name": "alacritty",
+    "source": {
+        "type": "github",
+        "repo": "atticuszeller/alacritty-deb",
+        "asset_patterns": {
+            "amd64": ".*\\.deb$"
+        }
+    },
+    "package": {
+        "name": "alacritty",
+        "maintainer": "Alacritty Developers",
+        "section": "utils",
+        "priority": "optional",
+        "architectures": [
+            "amd64"
+        ]
+    }
+}
