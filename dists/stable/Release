@@ -1,0 +1,33 @@
+Architectures: amd64 arm64 aarch64
+Codename: stable
+Components: main
+Date: Sat, 27 Sep 2025 00:18:10 +0000
+Description: Custom APT repository for various packages
+Label: Custom DEB Repository
+Origin: AtticusZeller DEB Index
+Suite: stable
+Version: 1.0
+MD5Sum:
+ 79b32839a4cf0fcea0a1a9f425e9dd90              251 Release
+ c6aa8806acb3583c7d5330badda25c6c            11524 main/binary-amd64/Packages
+ a81b6ec099acb6f291a0f74f4bcc2ebf             3273 main/binary-amd64/Packages.gz
+ 664fdc75267a7385349139736855a63c              570 main/binary-arm64/Packages
+ ed39855ffa2157aabad4ef262557b905              399 main/binary-arm64/Packages.gz
+SHA1:
+ 8b43c617397750c2430f50e6d09691ee2f2da9b0              251 Release
+ 90651243d802f38bf044e9fc786ec12139bf91d2            11524 main/binary-amd64/Packages
+ 12f6c54fc72bcb1c605b231967d8911e290842b1             3273 main/binary-amd64/Packages.gz
+ ecd7ca6d2160b0836f9480db77f22050db547b40              570 main/binary-arm64/Packages
+ 9c4f03a24412f736f537a5eb65e45b47f22874d0              399 main/binary-arm64/Packages.gz
+SHA256:
+ f334efe6a7ca5c384cd67653f46bcd7c4989f232b81b427c4350416202814a8e              251 Release
+ 857e8483bdd2a8d0b876df2bf934d1bf9f0da960af0e19850e4874df3d5c2d0c            11524 main/binary-amd64/Packages
+ 06830942052d32a7a9618bb3395751b9d4b7cb987661810918924727c84e0c8c             3273 main/binary-amd64/Packages.gz
+ d140815bbfafe4fb7114635410afc67947e69a56e109874fea0bdc69b92c86d9              570 main/binary-arm64/Packages
+ 1947ae7d2f9a1799c0a704cc6d87baa0213893e74033f02b24ab13fd6f1c1456              399 main/binary-arm64/Packages.gz
+SHA512:
+ 84f197bce0eba16b95e44af1561527c6f1cb6b48d876d8dcfcf59d316f3335f0d48a1421cc4b7608f175b90c7918bd80bd65762dbe4b5de2278ccbef582f14dc              251 Release
+ d529df811ee889ef4e5c25ba8393089ee8b7396ef6c8b52357cb2abb34f8e489ec3d6a9c2aee02b24c142f15ddd26f7fe05d152979463fc9d1b1b8a9c092ecea            11524 main/binary-amd64/Packages
+ 5ea2c4070c8c2958e3f2805abef4029a77a6fe6d66622b925b310b7675d4792c56ecea01ee8de895052829ac05ad07f2a2a793945cabe81e0ccd879cf05088bb             3273 main/binary-amd64/Packages.gz
+ 47d0ec8ea2a1f1ad6b00032b232a85535ce85563bd117d7dc6970eedcaa7672d042a48da5dd28d3cd0efc1593f9cc51a9a23d3de302674b1fa4f6343b9724304              570 main/binary-arm64/Packages
+ 331810885a704e0d56e4bbd7318a114db23a545eb05cab20b9224ae872a7f18c105d3dcee898dd57901d5ad79ca4ea4cac8fd968cc07e2d7b61bef6529b96841              399 main/binary-arm64/Packages.gz
