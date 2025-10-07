@@ -4,40 +4,40 @@ Hash: SHA512
 Architectures: amd64 arm64 aarch64
 Codename: stable
 Components: main
-Date: Thu, 02 Oct 2025 00:16:25 +0000
+Date: Tue, 07 Oct 2025 00:17:22 +0000
 Description: Custom APT repository for various packages
 Label: Custom DEB Repository
 Origin: AtticusZeller DEB Index
 Suite: stable
 Version: 1.0
 MD5Sum:
- 1af2fd002f106c577f9402801087334e              251 Release
- 193c59179c82b5098018c64946f8ddfc            12128 main/binary-amd64/Packages
- 086b65822bbc95092be280d1a08d0066             3383 main/binary-amd64/Packages.gz
+ 5d46b41d1ca7dfd2a1abd563516674ca              251 Release
+ 89f6ca35ff3acbb5890e9aadd0c77002            12504 main/binary-amd64/Packages
+ 60479e2ae1a81e9e6cf3401419737fa2             3483 main/binary-amd64/Packages.gz
  664fdc75267a7385349139736855a63c              570 main/binary-arm64/Packages
  ed39855ffa2157aabad4ef262557b905              399 main/binary-arm64/Packages.gz
 SHA1:
- 8854b39a53b298234a2f90d2fc6844d6d3b186ad              251 Release
- a620e52ce75771ea65470d82d804bf36884cf3ed            12128 main/binary-amd64/Packages
- 4ea63ff9fa650f532a829de0b740a0cadc9ad752             3383 main/binary-amd64/Packages.gz
+ be087645ca96df621b2e653b4b624ef56bbe49ee              251 Release
+ b574df0e7945530974096d3a6a42774aecedee78            12504 main/binary-amd64/Packages
+ d9c2102588763aeccd86ebd88dd06a656e7dd90b             3483 main/binary-amd64/Packages.gz
  ecd7ca6d2160b0836f9480db77f22050db547b40              570 main/binary-arm64/Packages
  9c4f03a24412f736f537a5eb65e45b47f22874d0              399 main/binary-arm64/Packages.gz
 SHA256:
- 9fc677cc20e74bbe2439475c080ce6f9b6dc4a08e66fed96216dd7913771493d              251 Release
- c128a0eb17127f14e2557eda82714f0c569afa6990ea286af0a363311238110a            12128 main/binary-amd64/Packages
- 79378061b88f200d9bd354571fafd37cb2f8e6f1e1d0a99b94645b10a3671906             3383 main/binary-amd64/Packages.gz
+ c5ebfa6edbb3958b6140fd7269ccafafa80ec39bcc29188938d244e9dae2d415              251 Release
+ fffd025022c32a6f20dbb58163fd8ba3431556c24fbb1ced64e77c4ab367040e            12504 main/binary-amd64/Packages
+ d2ba732409ef4a4c92146ed78fe5d14060b4ea15017d77ce80210dd65da1074c             3483 main/binary-amd64/Packages.gz
  d140815bbfafe4fb7114635410afc67947e69a56e109874fea0bdc69b92c86d9              570 main/binary-arm64/Packages
  1947ae7d2f9a1799c0a704cc6d87baa0213893e74033f02b24ab13fd6f1c1456              399 main/binary-arm64/Packages.gz
 SHA512:
- 20b5af5c18c38d7d118148c269866f258545ca2ddc126cca362b78624c897cd6df8d05820d17b332b295fb970f53f9a15f796c8777c9501e5993ce13ece7ea81              251 Release
- 38dfe24b8d05649d108db0fe32c97bd42b2b02505e5e8dee1712e20be256a491cb99df618861f4aff6a45ae1a3ea8a094b6f6f6348b4793355843c67c0bf0d58            12128 main/binary-amd64/Packages
- f6ef7cf77af58f77b27f4c711bca768d8f8f981b509cd7ed82191f5df6b6c9864cbe73bf9a6bddb06efaa49efd7d42819a85aca8df75e46c1df5c9085753bb0a             3383 main/binary-amd64/Packages.gz
+ 838f900ffcbaca2cf8f0f15e18eb8e64fc5667cc69fb6bdc1326b211b858ac2e2df5e44c80faeb31803b464d870de70f9b5367ffafc6cd6877a02bb9f4f50566              251 Release
+ 4ae203146c170eb4154808ed49093f0d17bd43325b385c2f43a656bb79742dbb899f050720e75424d313f4939a3789a3716965663d95f1a8af030e1964648217            12504 main/binary-amd64/Packages
+ 4ca6a06358b1a1e39a8bf1e28cc9ef7a18910bcbba956bcfffcc3353c2e6e0d11b9056cb6951e2daa7abb30fd47250458d8f9d8a2737126ea5c89d881f717a7f             3483 main/binary-amd64/Packages.gz
  47d0ec8ea2a1f1ad6b00032b232a85535ce85563bd117d7dc6970eedcaa7672d042a48da5dd28d3cd0efc1593f9cc51a9a23d3de302674b1fa4f6343b9724304              570 main/binary-arm64/Packages
  331810885a704e0d56e4bbd7318a114db23a545eb05cab20b9224ae872a7f18c105d3dcee898dd57901d5ad79ca4ea4cac8fd968cc07e2d7b61bef6529b96841              399 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQ2EygOjfDt8vaxS9waYKvHPM/1RQUCaN3EWQAKCRAaYKvHPM/1
-RbFlAP4vb+e7rNSdO4QCZnXUySh4OEsrlUBYC30smKzJy0iDXQD9F3dowgwEcmw0
-v3jN56z3rRuKp7qp6FOZNBaANHYOpAk=
-=/rpI
+iHUEARYKAB0WIQQ2EygOjfDt8vaxS9waYKvHPM/1RQUCaORcEgAKCRAaYKvHPM/1
+RcrIAQDY582wmqxiTiUArt5Rgws7QCilYjoz1L8ZAq2/5oNcYQD/a3pGDLOjtH9a
+RoO2mGQHhDzOcY7Pl+rstOPf9+HNwAs=
+=ITt/
 -----END PGP SIGNATURE-----
