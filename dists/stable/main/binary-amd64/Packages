@@ -14,6 +14,22 @@ Description: GPU-accelerated terminal emulator
  Alacritty is a modern terminal emulator that
  utilizes GPU acceleration for improved performance.
 
+Package: alacritty
+Version: 0.16.1
+Architecture: amd64
+Maintainer: Atticus hello@atticux.me
+Depends: libc6
+Filename: pool/alacritty/alacritty_0.16.1_amd64.deb
+Size: 10357126
+MD5sum: d5d1484d730b665e9cce8552da0f603c
+SHA1: 31e9a8857502c3e246a1486417b3e7b6726f74e0
+SHA256: 69163a518c41cdd3056cbba3a4fb94f4b86f5a9ae03c96daf007249cfbde699e
+Section: utils
+Priority: optional
+Description: GPU-accelerated terminal emulator
+ Alacritty is a modern terminal emulator that
+ utilizes GPU acceleration for improved performance.
+
 Package: obsidian
 Version: 1.8.10
 Architecture: amd64
