@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64 arm64 aarch64
+Codename: stable
+Components: main
+Date: Sun, 30 Nov 2025 00:21:06 +0000
+Description: Custom APT repository for various packages
+Label: Custom DEB Repository
+Origin: AtticusZeller DEB Index
+Suite: stable
+Version: 1.0
+MD5Sum:
+ b69822e1e958cbcdeeab3004fa86a246              251 Release
+ 3266b3038c56a10ac8058762f87a6776            15362 main/binary-amd64/Packages
+ da35d15c7b75a4f79e717a54228b9522             4149 main/binary-amd64/Packages.gz
+ 664fdc75267a7385349139736855a63c              570 main/binary-arm64/Packages
+ ed39855ffa2157aabad4ef262557b905              399 main/binary-arm64/Packages.gz
+SHA1:
+ 48db4f6b3a1740dd0a79ccd5d4d4fd3eefca20aa              251 Release
+ 12cea5c043272a49a4eef5c05b7e88b0df9c861b            15362 main/binary-amd64/Packages
+ 64eaa42371222ac9b08e1fe04516f4234617e7ec             4149 main/binary-amd64/Packages.gz
+ ecd7ca6d2160b0836f9480db77f22050db547b40              570 main/binary-arm64/Packages
+ 9c4f03a24412f736f537a5eb65e45b47f22874d0              399 main/binary-arm64/Packages.gz
+SHA256:
+ 622db496f35c75a3e1f324bd26e4dc9c27f770138d540c4efc69ce6e15a8d5bb              251 Release
+ 29c1cf87e6efdd1df6db94ed21cb46a3bbd0d3ec0c19ece4e34d7a3d62aa8a62            15362 main/binary-amd64/Packages
+ 55c83b92ef275d9b4f40dd2cf801c82de6ecb371cc836bb265c223e98e7e4f88             4149 main/binary-amd64/Packages.gz
+ d140815bbfafe4fb7114635410afc67947e69a56e109874fea0bdc69b92c86d9              570 main/binary-arm64/Packages
+ 1947ae7d2f9a1799c0a704cc6d87baa0213893e74033f02b24ab13fd6f1c1456              399 main/binary-arm64/Packages.gz
+SHA512:
+ 872a32550bc52a03de456bf433ac74a57c6326ef96953b64ab9049d3e4b3d8f8b5ee23c1dcd578be6ab2a6187c0185d09f2d5c39047a5f1c0e74ad2b84a94435              251 Release
+ 9263d95a9b8c7e4020ecb7f8ece8f616aa63d4e6763fd537768d509a70c7c53a6537720eb4e248a420c1a0718c8553b94fe7dbf10c160ce0a78e13f47719043a            15362 main/binary-amd64/Packages
+ 24bc48b8a19c3ba62b61f9b12a84e7dad38193a4337f0a658f63a55cf61fc70555a6720d303d3aeb956acb3e3d3334fed0abf8021b471f3b8d9f8c35805918ee             4149 main/binary-amd64/Packages.gz
+ 47d0ec8ea2a1f1ad6b00032b232a85535ce85563bd117d7dc6970eedcaa7672d042a48da5dd28d3cd0efc1593f9cc51a9a23d3de302674b1fa4f6343b9724304              570 main/binary-arm64/Packages
+ 331810885a704e0d56e4bbd7318a114db23a545eb05cab20b9224ae872a7f18c105d3dcee898dd57901d5ad79ca4ea4cac8fd968cc07e2d7b61bef6529b96841              399 main/binary-arm64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQ2EygOjfDt8vaxS9waYKvHPM/1RQUCaSuN8gAKCRAaYKvHPM/1
+RSqMAP0cBc0aKSQFlF5pLYdXr7YL8UQ2Z06H9sZxld7jpVdiewD/RUmvMT10CGC4
+wGH+7/jHsm5RCAyJSvMX6Scs9aU1xgM=
+=KEPU
+-----END PGP SIGNATURE-----
