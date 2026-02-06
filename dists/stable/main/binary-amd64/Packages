@@ -111,6 +111,26 @@ License: UNLICENSED
 Vendor: Dynalist Inc.
 
 Package: obsidian
+Version: 1.11.7
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 315768
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.11.7_amd64.deb
+Size: 85637518
+MD5sum: aa824d357225250c206d507c7bb08612
+SHA1: beabffd55ae48ce75704e499a1325449c1d5b6a9
+SHA256: 967e4f24a608f76a57fb00798a0416e14bf7db92b62bb16728ae123e1ef48123
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
 Version: 1.8.10
 Architecture: amd64
 Maintainer: Dynalist Inc.
