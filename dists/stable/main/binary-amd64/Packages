@@ -1,0 +1,728 @@
+Package: alacritty
+Version: 0.15.1
+Architecture: amd64
+Maintainer: Your Name <your.email@example.com>
+Depends: libc6
+Filename: pool/alacritty/alacritty_0.15.1_amd64.deb
+Size: 10348032
+MD5sum: 36e2e808a5d6689274782b5646fd7132
+SHA1: c7845ca0c391cbbedbb8df23ee9f8d613ad4294b
+SHA256: e988ba897ccf97370ec04a1a2d919e19d513f3be8b035632d99adefa82879dd0
+Section: utils
+Priority: optional
+Description: GPU-accelerated terminal emulator
+ Alacritty is a modern terminal emulator that
+ utilizes GPU acceleration for improved performance.
+
+Package: alacritty
+Version: 0.16.1
+Architecture: amd64
+Maintainer: Atticus hello@atticux.me
+Depends: libc6
+Filename: pool/alacritty/alacritty_0.16.1_amd64.deb
+Size: 10357126
+MD5sum: d5d1484d730b665e9cce8552da0f603c
+SHA1: 31e9a8857502c3e246a1486417b3e7b6726f74e0
+SHA256: 69163a518c41cdd3056cbba3a4fb94f4b86f5a9ae03c96daf007249cfbde699e
+Section: utils
+Priority: optional
+Description: GPU-accelerated terminal emulator
+ Alacritty is a modern terminal emulator that
+ utilizes GPU acceleration for improved performance.
+
+Package: obsidian
+Version: 1.10.3
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 315073
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.10.3_amd64.deb
+Size: 86311760
+MD5sum: 1fb8613a5a24e9b36c5f82df5dfb3ff4
+SHA1: dfe8fcb77f6f70e3ec4a6d079e7728599af49c34
+SHA256: c2745551c3f4113d96625491060f320c57d315905541ff0e30a694dbe3a9b39c
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.10.6
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 315066
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.10.6_amd64.deb
+Size: 86313124
+MD5sum: ffdb4f8c987704b1b28fe0f336314c42
+SHA1: 44014562d665f7accee080e51a69eefff2784a90
+SHA256: 7e2fcf3fa6da54715d88a17ac906c87ca397c9d1e15ac6a0f6ba74f097a749d6
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.11.4
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 317876
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.11.4_amd64.deb
+Size: 85906404
+MD5sum: 1e0764f9e2f07c86f115d3e970b6a1a5
+SHA1: b1a3dc4fa2be545752a90339c1813490564dcea5
+SHA256: fe979b8bdf9480a0656e30eb230a09631443d5c4c7a384f60eda9afb3373d760
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.11.5
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 315707
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.11.5_amd64.deb
+Size: 85650922
+MD5sum: 3bec6f20e8f26e09effe3d8a9450783a
+SHA1: 641d51456f8f048e033ccbda4a81c91d0968bb1f
+SHA256: 1842b343f33c1dfebd05397d54c0c55bf1c7b6a54ef72663b100df3eb67e67e9
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.11.7
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 315768
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.11.7_amd64.deb
+Size: 85637518
+MD5sum: aa824d357225250c206d507c7bb08612
+SHA1: beabffd55ae48ce75704e499a1325449c1d5b6a9
+SHA256: 967e4f24a608f76a57fb00798a0416e14bf7db92b62bb16728ae123e1ef48123
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.12.4
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 313871
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.12.4_amd64.deb
+Size: 85762132
+MD5sum: 96c9a7e189677abbad76424735662f92
+SHA1: 878af168cbd8356b6dc90564e5705aac6b009689
+SHA256: 24f582c5d80327a3b926e95aa6a4926270f855e256ac44ba94fe4a1db820e045
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.10
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 293235
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.10_amd64.deb
+Size: 80536530
+MD5sum: 76f769c873431b0bd2b3207d11da20ef
+SHA1: edd62fc26b4825af1599774fdec83e9e626e4672
+SHA256: da19b2755013e9def37271cf04ce7485c03a22fa02b0951e4108884dcd1bd774
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.3
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291633
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.3_amd64.deb
+Size: 80568512
+MD5sum: 081824539786dae63fe62093e6d95d3b
+SHA1: 3696ba42d9bcaa3acbf572c99ac7ff3ce1331776
+SHA256: ee3d52544339249a2e816917ef0281ef7c63509f9ab511145f94ff1ba31c5b9f
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.4
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291633
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.4_amd64.deb
+Size: 80570924
+MD5sum: 204cca3f6df6b469e6590933eeba3581
+SHA1: a0bfeef740f769aa9bee320a229ae57ded5294cb
+SHA256: be35311cf2b48500dfc05c469a0431ebdfbd8a94bca47007136ad5f2b2a21b32
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.7
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291651
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.7_amd64.deb
+Size: 80565332
+MD5sum: 8f3cb0fb5590b5e340744ab8b1ac80ce
+SHA1: f0b5de797afe9beb2c12ddcd168a5a95fb473d4f
+SHA256: 39ed20205fc2abc9f98275bb890eb182856231a4359df5f2fbd3672c8ac99a74
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.8.9
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 291148
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.8.9_amd64.deb
+Size: 80266718
+MD5sum: 096d98f4f5eebf8f5bfc197779d71884
+SHA1: f67fe03f012dc4654324642ab17b3016d92109b9
+SHA256: eda25a4a390427555d3ce89c96289557bdc69beb900e85aed33e66072c97e2fe
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.9.10
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 317217
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.9.10_amd64.deb
+Size: 86628952
+MD5sum: e1b37b1ad0bf0cb864fa9e3e6b7d49e5
+SHA1: 82a16b66d7a3818e034c4b90ee0216b5a4c08898
+SHA256: 44c8eeb0797c332dbf4533aaaa126a31896db8c207dac9cda61beba7c33be257
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.9.12
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 319358
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.9.12_amd64.deb
+Size: 87055312
+MD5sum: ba4b43cf5857492aca8d5c96bd68c790
+SHA1: ddb655465b7fcb92b313196d631de70c7ef840f7
+SHA256: 5c2a5d7fcd566879e3db066ccc4df81b9c6ac3e72ec88a4ae13e0428a1cf289f
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: obsidian
+Version: 1.9.14
+Architecture: amd64
+Maintainer: Dynalist Inc.
+Installed-Size: 316084
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: pool/obsidian/obsidian_1.9.14_amd64.deb
+Size: 86502322
+MD5sum: fd358229bb19667c5d05550e29e5f575
+SHA1: 107d9a609c02b9fd59620b91d474e3a6a2dc1efe
+SHA256: d1ad758b1977a34ff7d0c906f11e0e88aa0a940fa4a22b83d357dab8ddd32d37
+Section: default
+Priority: optional
+Homepage: https://obsidian.md
+Description:
+  Obsidian
+License: UNLICENSED
+Vendor: Dynalist Inc.
+
+Package: sing-box
+Version: 1.11.10
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.10_amd64.deb
+Size: 7934538
+MD5sum: 27f7f82e8151a3f72e80997ebac77fc2
+SHA1: b4bd2332375f72a8825dee82ed67d8aebce70c96
+SHA256: 6dbd0ca8b94f3a3984a157afbd8144d2226520a792d3b80385ad12c4739bb3ee
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.11
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.11_amd64.deb
+Size: 7934224
+MD5sum: 0d0ae8e5fccbf492a4e79b6af33bb067
+SHA1: e47c245ca7c2468974c9fe24f6282616816d0e5e
+SHA256: cdc8340e1c581789f1787e6d14dd539829c01f84a0e15ecf016856b1169c22cf
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.13
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.13_amd64.deb
+Size: 7935264
+MD5sum: 652fed3e1fdb2e638bec69e211ab2fdf
+SHA1: b5fa6d47ea219f9653bbb30a65768270f1b2c659
+SHA256: 7a0b7c471e17fc230735bebfa401150d53be93cecb0cd939628555091eeccbb4
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.14
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.14_amd64.deb
+Size: 7932162
+MD5sum: 9751b558155e705bfc4602d6b7372fa4
+SHA1: 5767dd741547fafe7ba2b26610a53ab86cd2fb9e
+SHA256: 9c78d378bb9fe452b1fda572ab41f1352a60b644d64bf6548e2679d4d66df464
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.15
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.15_amd64.deb
+Size: 8110816
+MD5sum: 63954745a445a253eeaafc32efdd20de
+SHA1: 7d8e0aa1965b402e83ecc6820ea2f37ddff19e53
+SHA256: dc9a0889c6a587a21a865d1db8ff4a4cfbeb8272960c3949081cffdab6f7a4cc
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.5
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.5_amd64.deb
+Size: 7927464
+MD5sum: 96998906b5ae4736bfbc21f2c98be7db
+SHA1: e0026f5b6b7e7dbe1827714cce30f2190b50a1ee
+SHA256: be4e09c69760f016f2f6a10c21e11ba85f2d3816f9ab524e3e14278c9da549f2
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.6
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.6_amd64.deb
+Size: 7930668
+MD5sum: dc19aaad6867ec74fbe36f32ad992548
+SHA1: 80b5d8dee0a433fb8a90de2e95bcaae187c8e540
+SHA256: 261fa793306b4891cd8d31434948b126a49a36052627f748666a09926742dd75
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.7
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.7_amd64.deb
+Size: 7935316
+MD5sum: eac05ed15dfc74d93cb7bf335ea09a4b
+SHA1: d0a67105a37cf6e4eb04d6edbcd5c884704c199e
+SHA256: b12aa46a2bb5aaa0c0b14d28d237dc1f5790cfef936cce1a98b138d666fb5a72
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.8
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.8_amd64.deb
+Size: 7930072
+MD5sum: 20942b87b65e06273e8d89fca1f1029e
+SHA1: b476dca0cc1fd87670cc871674f115f5fc02332a
+SHA256: e4249195fd35ba99770d8df8721f72661b3ca3311c36c0cea37a40a054ef3ef3
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.11.9
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.11.9_amd64.deb
+Size: 7930358
+MD5sum: 9ec5cb1ac38f1fe271b2cab1dc0f4346
+SHA1: 3ee1da59dbfb8f4d97b037442e784e08bce2f320
+SHA256: bfeef778f17c705d67bcca696ae6638dba7dde9368a4b7e7f862d9fc1addddfa
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.0
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.0_amd64.deb
+Size: 9144616
+MD5sum: 8cb1882df2cd9279dadd10733ad8f1ad
+SHA1: 2bde81b864c91c33d546d3cb734c3b42eb2b8740
+SHA256: ca9600b29e3be1c408ee4b20296ccbe73c4fcdc4fb939c91856ec3c1e3a91304
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.1
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.1_amd64.deb
+Size: 9144150
+MD5sum: dce616d1ce38a2c73f051138030dc308
+SHA1: 5fc655a54acc75e2e7b3b74ed30eef136785db51
+SHA256: de2eecbba06b1c05c2cf0dbe8d2cba715ed0d8dc14f1fb117f878c183db52ba7
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.10
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.10_amd64.deb
+Size: 9171030
+MD5sum: 681b569087f9d2bbda7c2e3581c26e14
+SHA1: f7822acc0306319a4761ef86523d1e01aa5d53f6
+SHA256: 93d4eafd158021dd504a4f2676341bb84ef9b4a7fcdf4c6a846b6024038d5fc4
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.11
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.11_amd64.deb
+Size: 9169544
+MD5sum: 7133fb2b446728cd26a7a48d661a5751
+SHA1: 542546f1b169962594ca123e9b8f5ac1a2c27f29
+SHA256: f979d71d28e5134463265a635a84d3b204b05f17666b81e9b489872d72f9b062
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.12
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.12_amd64.deb
+Size: 9168560
+MD5sum: e9584326813e54da53d5deaaab90ab5b
+SHA1: 6f31f3a9990387f09f506dbd79c0180a247505b0
+SHA256: b0d36aec89ef5cd21769c0516894d2dd30c0414932e2e39c84e2c1e4fff28b5a
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.13
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.13_amd64.deb
+Size: 9174600
+MD5sum: 04db35131d4f48cf4f2c080320a1c5f0
+SHA1: fc988ad9e6a1a76103c4903e95374fe0fb8cdc3f
+SHA256: 309002b13db19de17c220fd96d1af4ea84ddbc0d59e66bb16a050f40600b9966
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.14
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.14_amd64.deb
+Size: 9177440
+MD5sum: eece2358a74aeeebe1865d3b6ebb54a8
+SHA1: 4a49866c0db157131afcdea35fd127de0ba929a5
+SHA256: f5bba24f81bd92a5a1e7762bbfe94f53697e221e54192e878b4b36ae5f1252ce
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.15
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.15_amd64.deb
+Size: 9176870
+MD5sum: 8b2b0331602959d46ab5f49893247f90
+SHA1: c321fd53f3badef7c58f7767d08052a59fe08f59
+SHA256: 2b873add64516889a0e920030ee6c04d080349102b50d16d87fb581a7bd63aaf
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.16
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.16_amd64.deb
+Size: 9176268
+MD5sum: 8ba1b1127c69522e072a0ae5791edd25
+SHA1: ab26c54e4c0bb0408d8852fbf56c3c2715657f82
+SHA256: 53506f81b6127bd884ff9fe6e3185b301be1bc4e32e34b43edd315d3746fbf50
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.17
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.17_amd64.deb
+Size: 9181500
+MD5sum: ee2956e742bae908eb3b2441509a678e
+SHA1: cd29f44f047e7b1bc89e396957d654e4f2be857c
+SHA256: 6f1bf59eec679b64cf70e0c9b333ab5b3ed6efca267d8cef1f2ce7a2bee72689
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.18
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.18_amd64.deb
+Size: 9186206
+MD5sum: c47c05c7922613aa2dd6b67bc9068061
+SHA1: 9f98dfda63255e932ea371327eddf0b619e21dd7
+SHA256: 26f5a2ed09ac0f934cac29cb19d78a07f3506c4ffe9d46845b233d53113c701c
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.19
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.19_amd64.deb
+Size: 9186016
+MD5sum: 6cc0afc6d4de482ab24950ee140814a6
+SHA1: 846bd6ce60e83706a1402ca2a32680b663d8627a
+SHA256: 84e50f000d141602bea2bcb42aad76c299a70c053307680537fb834201dbf125
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.2
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.2_amd64.deb
+Size: 9151332
+MD5sum: f36b74ca7a824cdd5acef142b95e0bc1
+SHA1: f14aab36b76676116fa6bbecddae0d413275449d
+SHA256: 8355b4cb4d93c6e3e21f2c2ea8bd8d2a4b15dae50793ba661aeb45f8ef55dee8
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.20
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.20_amd64.deb
+Size: 9185954
+MD5sum: 30bd8e17d79c91d0c0a80172fb1bb5fd
+SHA1: f9aebc6f41d8e0758d6b0788d0f3055e37074d8e
+SHA256: 2446873d95eb5ffa7f6d8078e88b96038b79ffa6e78ab083b1729e2d96970307
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.21
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.21_amd64.deb
+Size: 9183876
+MD5sum: 911d8825fffb9e989d7902d4dc95597f
+SHA1: 052a683657f68ec137673e04cc05201badab5936
+SHA256: 80b08b701e7d5ad5b9626233f0ab9660edb85b8e62798ad3bd3c7042511ab54c
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.22
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.22_amd64.deb
+Size: 9184100
+MD5sum: 2b1ee7f4acec313f4ec161d6cd114911
+SHA1: b5066a43833558fee2ec1936baf15fb196464f4f
+SHA256: 902c563490e357308d65c03846a48ea155c023e83af789b1c37fa1c702f50469
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.3
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.3_amd64.deb
+Size: 9151306
+MD5sum: 08529516a13dce201ee478e885eca41a
+SHA1: 997edfb175a86cd26d38d46ea9488c656daf3db0
+SHA256: 8411978e8e404ba62e3edb4af594c933cc8919ac710f5e51f0148e778bc80efe
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.4
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.4_amd64.deb
+Size: 9153302
+MD5sum: 7283f78b873fbe31503064225d424ccb
+SHA1: e27deeda81591976643496005db54b49cb81a2b5
+SHA256: 456e53b70f2ca4455467b79404fd93bfa27260d5a7d8c00089ded09784049437
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.5
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.5_amd64.deb
+Size: 9157518
+MD5sum: fdab7a08b4b099650e878ff40637cc38
+SHA1: 988589fc7ce8f29d8762f735c44820c85aaf4e94
+SHA256: a844c1d2608ff14a550ed84dc39c8c873120517a9aa1602dcf151e64a9be3488
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.7
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.7_amd64.deb
+Size: 9161862
+MD5sum: 3fef92e10f7825efb82458442f461c5d
+SHA1: e482c2d4909032f25b17e486c85798d935955bf5
+SHA256: 7bba0a19e4f95b7efb626ba9ebe4fe629f9c47a79931309f31a267c4c9966c35
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.8
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.8_amd64.deb
+Size: 9162754
+MD5sum: 53a2a0bd0b65137054d29aafd2263566
+SHA1: de7f51b191cebcf019b59a1f112d9dda2d6c8f0e
+SHA256: 3fc9215a0560e0e4fbff562f6b99d72133cd39be9e6eea443a1767157d38a9b4
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.12.9
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.12.9_amd64.deb
+Size: 9165754
+MD5sum: 6e4d35e0c29452cefc0d6d55c9c60493
+SHA1: be33386c432cdce57268fb478f1a352bb04dbc11
+SHA256: 4535a0f6380c8c8dcf5b67f8e28bc5dd29f74bb338b7d5e31a3c14c1610371c7
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
