@@ -30,6 +30,51 @@ Description: GPU-accelerated terminal emulator
  Alacritty is a modern terminal emulator that
  utilizes GPU acceleration for improved performance.
 
+Package: cc-switch
+Version: 3.12.0
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 22494
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.12.0_amd64.deb
+Size: 9591690
+MD5sum: 02478c105b186a1de8470ab66c25ae0c
+SHA1: 269724dcd2b045e7035526ee0b97fc2507a89368
+SHA256: 841a58959865702b1cd54c4534160b91581e0582038817fb2085d744f45a238d
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
+Package: cc-switch
+Version: 3.12.1
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 23002
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.12.1_amd64.deb
+Size: 9833476
+MD5sum: de0b7a23249f913608fdbee63cae66fc
+SHA1: 8365bece1b38e6f413bde740b8ea97138b3fa978
+SHA256: e414f0139cf734dbd723e27a16c1d92facc6dce276d47514bf61ceb32729b292
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
+Package: cc-switch
+Version: 3.12.2
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 23013
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.12.2_amd64.deb
+Size: 9839616
+MD5sum: 576037d408cfe38174bf8c0e786ac587
+SHA1: 905fb96994f33b2093028836198e3992e1ebf2a4
+SHA256: 5ee011bc51449dfa31617337093608fe2179382a1cad0988990184d8c65a862a
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
 Package: obsidian
 Version: 1.10.3
 Architecture: amd64
