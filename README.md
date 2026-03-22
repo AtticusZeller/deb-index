@@ -7,6 +7,7 @@ auto sync debs
 * obsidian
 * sing-box
 * alacritty
+* cc-switch
 
 ## Add repo
 
