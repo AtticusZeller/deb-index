@@ -90,6 +90,21 @@ Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
 
+Package: cc-switch
+Version: 3.12.3
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 23733
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
+Size: 10080384
+MD5sum: bd4289a11d607925a9aefdc4afa99412
+SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
+SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
 Package: obsidian
 Version: 1.10.3
 Architecture: amd64
