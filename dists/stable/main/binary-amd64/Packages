@@ -940,3 +940,16 @@ Section: net
 Priority: optional
 Description: The universal proxy platform.
 
+Package: sing-box
+Version: 1.13.7
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.13.7_amd64.deb
+Size: 9616800
+MD5sum: 519dc4c024138fa3c7929784661fa329
+SHA1: 205fc56e6486d59a0814cc9706ab1b3c7ce6c1f1
+SHA256: 6175229ef7bb835e0c5e3118e51ea1af892d75f593b9098ccc8840981e9b4d40
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
