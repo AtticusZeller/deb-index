@@ -79,13 +79,13 @@ Package: cc-switch
 Version: 3.12.3
 Architecture: amd64
 Maintainer: Jason Young
-Installed-Size: 23729
+Installed-Size: 23733
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/cc-switch/cc-switch_3.12.4_amd64.deb
-Size: 10081156
-MD5sum: 2c679ee43ff3aca1e32e15c1914fba72
-SHA1: 5a4f41504e04cedf7559ee64cb7e7b2a269e4c24
-SHA256: 9aeea324d6db7726d26d9df7a033ee2b2af5ee6129a6d8a1022ad87e7c8f2e54
+Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
+Size: 10080384
+MD5sum: bd4289a11d607925a9aefdc4afa99412
+SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
+SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
@@ -94,13 +94,13 @@ Package: cc-switch
 Version: 3.12.3
 Architecture: amd64
 Maintainer: Jason Young
-Installed-Size: 23733
+Installed-Size: 23729
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
-Size: 10080384
-MD5sum: bd4289a11d607925a9aefdc4afa99412
-SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
-SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
+Filename: pool/cc-switch/cc-switch_3.12.4_amd64.deb
+Size: 10081156
+MD5sum: 2c679ee43ff3aca1e32e15c1914fba72
+SHA1: 5a4f41504e04cedf7559ee64cb7e7b2a269e4c24
+SHA256: 9aeea324d6db7726d26d9df7a033ee2b2af5ee6129a6d8a1022ad87e7c8f2e54
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
@@ -266,6 +266,21 @@ Size: 12678302
 MD5sum: 0a85040f7b7cf6d4e0a52abeb9a7a415
 SHA1: 82c94dd9da64b198bbf09cb8928a52c2f6ae5efa
 SHA256: 1d457532c5bc39fd0189b47c159e7d4b596c3244ceb38bdc89b1f6cdc9f51e7a
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
+Package: cc-switch
+Version: 3.18.0
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 29560
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.18.0_amd64.deb
+Size: 12915920
+MD5sum: e07d8efa2696101e1959390b4a561134
+SHA1: 6b7c38a22fdcccd66f8544167cf7a791fb6264c1
+SHA256: 3c8aaaa21bdb57e6a4e9ed6f9e84f36f486aed5c5520bfaa31498207abe8f141
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
