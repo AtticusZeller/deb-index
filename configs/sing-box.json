@@ -1,0 +1,19 @@
+{
+    "name": "sing-box",
+    "source": {
+        "type": "github",
+        "repo": "atticuszeller/sing-box-deb",
+        "asset_patterns": {
+            "amd64": "^sing-box_\\d+\\.\\d+\\.\\d+_amd64\\.deb$"
+        }
+    },
+    "package": {
+        "name": "sing-box",
+        "maintainer": "nekohasekai",
+        "section": "net",
+        "priority": "optional",
+        "architectures": [
+            "amd64"
+        ]
+    }
+}
