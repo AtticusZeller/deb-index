@@ -1,3 +1,5 @@
-minor_version: 3.18
+minor_version: 3.19
 versions:
-  - v3.18.0
+  - v3.19.2
+  - v3.19.1
+  - v3.19.0

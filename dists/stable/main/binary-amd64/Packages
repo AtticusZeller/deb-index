@@ -79,13 +79,13 @@ Package: cc-switch
 Version: 3.12.3
 Architecture: amd64
 Maintainer: Jason Young
-Installed-Size: 23733
+Installed-Size: 23729
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
-Size: 10080384
-MD5sum: bd4289a11d607925a9aefdc4afa99412
-SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
-SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
+Filename: pool/cc-switch/cc-switch_3.12.4_amd64.deb
+Size: 10081156
+MD5sum: 2c679ee43ff3aca1e32e15c1914fba72
+SHA1: 5a4f41504e04cedf7559ee64cb7e7b2a269e4c24
+SHA256: 9aeea324d6db7726d26d9df7a033ee2b2af5ee6129a6d8a1022ad87e7c8f2e54
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
@@ -94,13 +94,13 @@ Package: cc-switch
 Version: 3.12.3
 Architecture: amd64
 Maintainer: Jason Young
-Installed-Size: 23729
+Installed-Size: 23733
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/cc-switch/cc-switch_3.12.4_amd64.deb
-Size: 10081156
-MD5sum: 2c679ee43ff3aca1e32e15c1914fba72
-SHA1: 5a4f41504e04cedf7559ee64cb7e7b2a269e4c24
-SHA256: 9aeea324d6db7726d26d9df7a033ee2b2af5ee6129a6d8a1022ad87e7c8f2e54
+Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
+Size: 10080384
+MD5sum: bd4289a11d607925a9aefdc4afa99412
+SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
+SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
@@ -281,6 +281,51 @@ Size: 12915920
 MD5sum: e07d8efa2696101e1959390b4a561134
 SHA1: 6b7c38a22fdcccd66f8544167cf7a791fb6264c1
 SHA256: 3c8aaaa21bdb57e6a4e9ed6f9e84f36f486aed5c5520bfaa31498207abe8f141
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
+Package: cc-switch
+Version: 3.19.0
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 29876
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.19.0_amd64.deb
+Size: 13082626
+MD5sum: 33e0b934061693a1a79f3194eef9230e
+SHA1: b66e3899ddc0fa566aa4254b1b9d9dca03ae0e07
+SHA256: 60c0ba7a6535e3571b67a27512299df757a9a7693e94e38074f5152fa57d36af
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
+Package: cc-switch
+Version: 3.19.1
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 29961
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.19.1_amd64.deb
+Size: 13099408
+MD5sum: 9b4da01b0d746f8e82394c03f8872332
+SHA1: 43fd37a3f40571800a9935e9ba672ee53d23d50e
+SHA256: 3d52bc01034077ce37a126c7fa8e3a7e8a53d178e92d8f3dc04f180344f37d87
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
+Package: cc-switch
+Version: 3.19.2
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 30101
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.19.2_amd64.deb
+Size: 13151722
+MD5sum: addac329b68511d4d574c7542c2fd9b2
+SHA1: 6e9cd4534177c074b8830d3a38e021430527630b
+SHA256: e530f35b129e3de34daa4be9a06e587642e58d0a6874f755913d34d0142677f2
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
