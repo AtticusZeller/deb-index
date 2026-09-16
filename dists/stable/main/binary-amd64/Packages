@@ -79,13 +79,13 @@ Package: cc-switch
 Version: 3.12.3
 Architecture: amd64
 Maintainer: Jason Young
-Installed-Size: 23729
+Installed-Size: 23733
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/cc-switch/cc-switch_3.12.4_amd64.deb
-Size: 10081156
-MD5sum: 2c679ee43ff3aca1e32e15c1914fba72
-SHA1: 5a4f41504e04cedf7559ee64cb7e7b2a269e4c24
-SHA256: 9aeea324d6db7726d26d9df7a033ee2b2af5ee6129a6d8a1022ad87e7c8f2e54
+Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
+Size: 10080384
+MD5sum: bd4289a11d607925a9aefdc4afa99412
+SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
+SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
@@ -94,13 +94,13 @@ Package: cc-switch
 Version: 3.12.3
 Architecture: amd64
 Maintainer: Jason Young
-Installed-Size: 23733
+Installed-Size: 23729
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
-Filename: pool/cc-switch/cc-switch_3.12.3_amd64.deb
-Size: 10080384
-MD5sum: bd4289a11d607925a9aefdc4afa99412
-SHA1: e294ea64128a332a04f9835cbb753fefa8c48e16
-SHA256: ee0972551b8e895d145cde303fd633b39444f8e8579ad803af9a3e2d6e7c2161
+Filename: pool/cc-switch/cc-switch_3.12.4_amd64.deb
+Size: 10081156
+MD5sum: 2c679ee43ff3aca1e32e15c1914fba72
+SHA1: 5a4f41504e04cedf7559ee64cb7e7b2a269e4c24
+SHA256: 9aeea324d6db7726d26d9df7a033ee2b2af5ee6129a6d8a1022ad87e7c8f2e54
 Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
@@ -330,305 +330,65 @@ Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
 
-Package: obsidian
-Version: 1.10.3
+Package: cc-switch
+Version: 3.20.0
 Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 315073
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.10.3_amd64.deb
-Size: 86311760
-MD5sum: 1fb8613a5a24e9b36c5f82df5dfb3ff4
-SHA1: dfe8fcb77f6f70e3ec4a6d079e7728599af49c34
-SHA256: c2745551c3f4113d96625491060f320c57d315905541ff0e30a694dbe3a9b39c
-Section: default
+Maintainer: Jason Young
+Installed-Size: 30989
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.20.0_amd64.deb
+Size: 13549836
+MD5sum: 455e7adb034a1bfffae4f935305dde91
+SHA1: b8f6784f0fd70a31bb0284fd1fc974e39fdf69ed
+SHA256: d40aee2c86e52978135c15fdf3a7cb9f9555ad7c046ad3be2dcac5edcd2a52c0
 Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
 
-Package: obsidian
-Version: 1.10.6
+Package: cc-switch
+Version: 3.20.1
 Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 315066
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.10.6_amd64.deb
-Size: 86313124
-MD5sum: ffdb4f8c987704b1b28fe0f336314c42
-SHA1: 44014562d665f7accee080e51a69eefff2784a90
-SHA256: 7e2fcf3fa6da54715d88a17ac906c87ca397c9d1e15ac6a0f6ba74f097a749d6
-Section: default
+Maintainer: Jason Young
+Installed-Size: 31092
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.20.1_amd64.deb
+Size: 13600044
+MD5sum: 25f5fb7eebc82f2d3839c2490f358715
+SHA1: 1722bee3452113670838ebd611bb1bf768abf093
+SHA256: aeea1f88391f007e651ff49ddb943e6535e4e76a93e97602ffa0edc758d13463
 Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
 
-Package: obsidian
-Version: 1.11.4
+Package: cc-switch
+Version: 3.20.2
 Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 317876
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.11.4_amd64.deb
-Size: 85906404
-MD5sum: 1e0764f9e2f07c86f115d3e970b6a1a5
-SHA1: b1a3dc4fa2be545752a90339c1813490564dcea5
-SHA256: fe979b8bdf9480a0656e30eb230a09631443d5c4c7a384f60eda9afb3373d760
-Section: default
+Maintainer: Jason Young
+Installed-Size: 31152
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.20.2_amd64.deb
+Size: 13629510
+MD5sum: f919ba1158e02fc127886eeaadd4f510
+SHA1: 4ffb279f0daabe509e297de686e910427f9caa10
+SHA256: ef0261bd9e84d7b79b0393fcc5dbc91664ab1b771d22fd108dbc9ada0f7b3fc7
 Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
 
-Package: obsidian
-Version: 1.11.5
+Package: cc-switch
+Version: 3.20.3
 Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 315707
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.11.5_amd64.deb
-Size: 85650922
-MD5sum: 3bec6f20e8f26e09effe3d8a9450783a
-SHA1: 641d51456f8f048e033ccbda4a81c91d0968bb1f
-SHA256: 1842b343f33c1dfebd05397d54c0c55bf1c7b6a54ef72663b100df3eb67e67e9
-Section: default
+Maintainer: Jason Young
+Installed-Size: 31191
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_3.20.3_amd64.deb
+Size: 13646772
+MD5sum: ec05cd4417f91d55f0f6de76a4e65d5c
+SHA1: 054cfd7c4df0a864dfbea780b55990458931ce31
+SHA256: 22cfe75f1205570545b66c482b567e54f85993cc8b1045c05c609749c41dd6c5
 Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.11.7
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 315768
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.11.7_amd64.deb
-Size: 85637518
-MD5sum: aa824d357225250c206d507c7bb08612
-SHA1: beabffd55ae48ce75704e499a1325449c1d5b6a9
-SHA256: 967e4f24a608f76a57fb00798a0416e14bf7db92b62bb16728ae123e1ef48123
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.12.4
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 313871
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.12.4_amd64.deb
-Size: 85762132
-MD5sum: 96c9a7e189677abbad76424735662f92
-SHA1: 878af168cbd8356b6dc90564e5705aac6b009689
-SHA256: 24f582c5d80327a3b926e95aa6a4926270f855e256ac44ba94fe4a1db820e045
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.12.7
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 313931
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.12.7_amd64.deb
-Size: 85762386
-MD5sum: 4fc61e50360320be9083f80b04a805ee
-SHA1: 0dce889b9d0df285e3eedfd982b42cd732993a30
-SHA256: 3644e3ef19bcd23db4d17f7c73311b5245429391a2a48b361da93375f59712b0
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.8.10
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 293235
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.8.10_amd64.deb
-Size: 80536530
-MD5sum: 76f769c873431b0bd2b3207d11da20ef
-SHA1: edd62fc26b4825af1599774fdec83e9e626e4672
-SHA256: da19b2755013e9def37271cf04ce7485c03a22fa02b0951e4108884dcd1bd774
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.8.3
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 291633
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.8.3_amd64.deb
-Size: 80568512
-MD5sum: 081824539786dae63fe62093e6d95d3b
-SHA1: 3696ba42d9bcaa3acbf572c99ac7ff3ce1331776
-SHA256: ee3d52544339249a2e816917ef0281ef7c63509f9ab511145f94ff1ba31c5b9f
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.8.4
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 291633
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.8.4_amd64.deb
-Size: 80570924
-MD5sum: 204cca3f6df6b469e6590933eeba3581
-SHA1: a0bfeef740f769aa9bee320a229ae57ded5294cb
-SHA256: be35311cf2b48500dfc05c469a0431ebdfbd8a94bca47007136ad5f2b2a21b32
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.8.7
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 291651
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.8.7_amd64.deb
-Size: 80565332
-MD5sum: 8f3cb0fb5590b5e340744ab8b1ac80ce
-SHA1: f0b5de797afe9beb2c12ddcd168a5a95fb473d4f
-SHA256: 39ed20205fc2abc9f98275bb890eb182856231a4359df5f2fbd3672c8ac99a74
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.8.9
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 291148
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.8.9_amd64.deb
-Size: 80266718
-MD5sum: 096d98f4f5eebf8f5bfc197779d71884
-SHA1: f67fe03f012dc4654324642ab17b3016d92109b9
-SHA256: eda25a4a390427555d3ce89c96289557bdc69beb900e85aed33e66072c97e2fe
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.9.10
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 317217
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.9.10_amd64.deb
-Size: 86628952
-MD5sum: e1b37b1ad0bf0cb864fa9e3e6b7d49e5
-SHA1: 82a16b66d7a3818e034c4b90ee0216b5a4c08898
-SHA256: 44c8eeb0797c332dbf4533aaaa126a31896db8c207dac9cda61beba7c33be257
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.9.12
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 319358
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.9.12_amd64.deb
-Size: 87055312
-MD5sum: ba4b43cf5857492aca8d5c96bd68c790
-SHA1: ddb655465b7fcb92b313196d631de70c7ef840f7
-SHA256: 5c2a5d7fcd566879e3db066ccc4df81b9c6ac3e72ec88a4ae13e0428a1cf289f
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
-
-Package: obsidian
-Version: 1.9.14
-Architecture: amd64
-Maintainer: Dynalist Inc.
-Installed-Size: 316084
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: pool/obsidian/obsidian_1.9.14_amd64.deb
-Size: 86502322
-MD5sum: fd358229bb19667c5d05550e29e5f575
-SHA1: 107d9a609c02b9fd59620b91d474e3a6a2dc1efe
-SHA256: d1ad758b1977a34ff7d0c906f11e0e88aa0a940fa4a22b83d357dab8ddd32d37
-Section: default
-Priority: optional
-Homepage: https://obsidian.md
-Description:
-  Obsidian
-License: UNLICENSED
-Vendor: Dynalist Inc.
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
 
 Package: sing-box
 Version: 1.11.10
@@ -1237,6 +997,32 @@ Size: 9634312
 MD5sum: 7642bb7d1e119c5e6f03321f85dbf4ae
 SHA1: 0bdf03bb81e9e2f9d2a1563c7a4ba813df8d1f3f
 SHA256: ed649c41a34f4fadcbdc9c56e93a2cc8cea7a7951a12449b6990477ad81896e0
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.14.0
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.14.0_amd64.deb
+Size: 12618442
+MD5sum: 3678a09ef49f9615f518527e56d57523
+SHA1: 961606b39a3ec814b6dcc7384b759b51691df980
+SHA256: 09c01065a5af1d1f94bb30df6517e8803514fe646f40531cc09429cf80764b52
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.14.1
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.14.1_amd64.deb
+Size: 12618490
+MD5sum: 4b40155f36646b32c8a110dcaea1069d
+SHA1: ba2dd65f8c5c67b3ca5f87da68ee45f37b77309d
+SHA256: 0f03093fd665251cc494eecbf254fe1bef9e9f874482764d03f5439b1797f552
 Section: net
 Priority: optional
 Description: The universal proxy platform.
