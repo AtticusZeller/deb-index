@@ -4,7 +4,6 @@ auto sync debs
 
 ## Supported packages
 
-* obsidian
 * sing-box
 * alacritty
 * cc-switch
@@ -39,5 +38,5 @@ curl -fsSL https://docs.atticux.me/deb-index/uninstall.sh | sudo bash
 ## Install package
 
 ```bash
-sudo apt install obsidian
+sudo apt install sing-box
 ```
