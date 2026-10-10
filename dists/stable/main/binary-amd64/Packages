@@ -495,6 +495,21 @@ Priority: optional
 Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
  (none)
 
+Package: cc-switch
+Version: 4.0.6
+Architecture: amd64
+Maintainer: Jason Young
+Installed-Size: 39817
+Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
+Filename: pool/cc-switch/cc-switch_4.0.6_amd64.deb
+Size: 16892764
+MD5sum: da23f7b861f39b6a78bcc9571cbdc7ce
+SHA1: 91ae0fb51d6371cc6db1f8b3ed95ebbadf253c72
+SHA256: 01229013a69007a2366a90f5bff702e0df9cf0533b8ae90c8cbf2497aa2cc80e
+Priority: optional
+Description: All-in-One Assistant for Claude Code, Codex & Gemini CLI
+ (none)
+
 Package: sing-box
 Version: 1.11.10
 Architecture: amd64
@@ -1141,6 +1156,19 @@ Size: 12624096
 MD5sum: 6f665272aaa5d863d26b75446ecb1a3f
 SHA1: 23fac9e0d1c2de4451e50af4ae8f32cbcb255280
 SHA256: ddfeac97b08c926638fccbdd2090dfce05f9cc18e15e8e069d2345a276eaffb3
+Section: net
+Priority: optional
+Description: The universal proxy platform.
+
+Package: sing-box
+Version: 1.14.3
+Architecture: amd64
+Maintainer: SagerNet
+Filename: pool/sing-box/sing-box_1.14.3_amd64.deb
+Size: 12559742
+MD5sum: 10e9295d5bef24bc5353f7b122fd2ce6
+SHA1: 87c37ee63b7a004bee9f33c67115fb2909613c87
+SHA256: 806adc78a2b20388edc5235bd396e6dae4e894e9c63462a4b88ed687bef33690
 Section: net
 Priority: optional
 Description: The universal proxy platform.
