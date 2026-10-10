@@ -82,7 +82,7 @@ release_dir="$work/repo/dists/stable"
 gpg --verify "$release_dir/InRelease" >/dev/null 2>&1
 gpg --verify "$release_dir/Release.gpg" "$release_dir/Release" >/dev/null 2>&1
 [[ ! -s "$release_dir/main/binary-arm64/Packages" ]]
-[[ ! -s "$release_dir/main/binary-armhf/Packages" ]]
+[[ ! -e "$release_dir/main/binary-armhf" ]]
 rg -q '^Package: sing-box$' "$release_dir/main/binary-amd64/Packages"
 rg -q '^Filename: pool/sing-box/sing-box_1.2.3_amd64.deb$' "$release_dir/main/binary-amd64/Packages"
 echo 'PASS: latest-only, missing package with lock, failed download, absent/ambiguous assets, prerelease, wrong package/architecture, signed metadata and empty indexes'

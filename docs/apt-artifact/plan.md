@@ -18,7 +18,7 @@ The GitHub API also reports push=false/admin=false. Pages remains configured for
 **Verification**
 
 1. [ ] Workflow succeeds, including InRelease verification with existing public.key.
-2. [ ] Public site exposes signed indexes and the five latest-package downloads.
+2. [ ] Public site exposes signed indexes and the two latest GUI-package downloads (amd64 SFL and alacritty).
 3. [ ] A client using the production key can apt update and see the new SFL candidate.
 
 **Done**

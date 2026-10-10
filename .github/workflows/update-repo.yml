@@ -56,7 +56,7 @@ jobs:
           mkdir -p site
           cp -r pool dists site/
           cp public.key install.sh uninstall.sh site/
-          printf '%s\n' '<!doctype html><html lang="en"><meta charset="utf-8"><title>DEB Index</title><h1>DEB Index</h1><p>APT packages: sing-box (SFL), alacritty, cc-switch.</p><p><a href="install.sh">Repository installer</a> | <a href="public.key">GPG public key</a></p></html>' > site/index.html
+          printf '%s\n' '<!doctype html><html lang="en"><meta charset="utf-8"><title>DEB Index</title><h1>DEB Index</h1><p>APT packages: sing-box (SFL), alacritty. GUI packages are available for amd64.</p><p><a href="install.sh">Repository installer</a> | <a href="public.key">GPG public key</a></p></html>' > site/index.html
           size=$(du -sb site | cut -f1)
           # Leave room below the GitHub Pages 1 GB published-site limit.
           if (( size > 950000000 )); then

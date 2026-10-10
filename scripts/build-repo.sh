@@ -48,7 +48,7 @@ generate_repo_metadata() {
     root_dir=$PWD
     # Rebuild all indexes, including empty architectures, so stale entries never survive.
     rm -rf dists/stable
-    for arch in amd64 arm64 armhf; do
+    for arch in amd64 arm64; do
         mkdir -p "dists/stable/main/binary-$arch"
         dpkg-scanpackages --multiversion --arch "$arch" pool/ > "dists/stable/main/binary-$arch/Packages"
         gzip -k -f "dists/stable/main/binary-$arch/Packages"

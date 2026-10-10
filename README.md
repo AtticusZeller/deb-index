@@ -9,13 +9,13 @@ and retains one release per application, for every configured architecture.
 
 | APT package | Upstream | Architectures |
 | --- | --- | --- |
-| `sing-box` (SFL desktop client) | [SagerNet/sing-box](https://github.com/SagerNet/sing-box/releases), `SFL-*.deb` | amd64, arm64, armhf |
+| `sing-box` (SFL desktop client) | [SagerNet/sing-box](https://github.com/SagerNet/sing-box/releases), `SFL-*.deb` | amd64 |
 | `alacritty` | [AtticusZeller/alacritty-deb](https://github.com/AtticusZeller/alacritty-deb/releases) | amd64 |
-| `cc-switch` | [farion1231/cc-switch](https://github.com/farion1231/cc-switch/releases) | amd64 |
 
 SFL's Debian package name is `sing-box`. This repository serves the desktop client under that
-name; there is no separate `sing-box-desktop` package. The upstream `armv7l` asset has Debian
-architecture `armhf`.
+name; there is no separate `sing-box-desktop` package.
+GUI applications are published for amd64 only. Command-line tools may use amd64 or arm64;
+armhf is not supported. Both currently configured applications are GUI applications.
 
 ## Add repository
 

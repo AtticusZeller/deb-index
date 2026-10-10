@@ -58,3 +58,25 @@
   dry-run; GitHub API reports push=false/admin=false, Secrets listing also returned HTTP 403.
   Pages currently uses legacy branch deployment. No production secrets or Pages settings changed.
 - Test artifacts are retained under /tmp/deb-index-live.g7Lokr for inspection.
+
+## Architecture and application scope correction (2026-10-10)
+
+User narrowed the preceding migration: CLI tools need amd64 or arm64; GUI apps need amd64 only;
+remove cc-switch. The preceding three-architecture/five-package verification is historical evidence.
+
+### Task: Publish only the requested GUI packages
+
+**Change**
+
+- [x] Removed cc-switch config and site listing; SFL now downloads amd64 only. Alacritty remains amd64.
+- [x] Removed armhf indexes and Release advertisement. The empty arm64 index remains available
+  for future configured CLI tools; no arm64 GUI DEBs are downloaded.
+- [x] Updated README and production acceptance criteria to two amd64 GUI packages.
+
+**Verification**
+
+1. [x] Regression, ShellCheck, actionlint, pre-commit hooks and config-set assertions passed after correction.
+
+**Done**
+
+- [x] Configured downloads are exactly one amd64 SFL and one amd64 Alacritty package; both previously downloaded real DEBs were checked again.

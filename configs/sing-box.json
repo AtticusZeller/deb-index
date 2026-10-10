@@ -4,9 +4,7 @@
         "type": "github",
         "repo": "SagerNet/sing-box",
         "asset_patterns": {
-            "amd64": "^SFL-[0-9.]+-amd64\\.deb$",
-            "arm64": "^SFL-[0-9.]+-arm64\\.deb$",
-            "armhf": "^SFL-[0-9.]+-armv7l\\.deb$"
+            "amd64": "^SFL-[0-9.]+-amd64\\.deb$"
         }
     },
     "package": {
@@ -14,6 +12,6 @@
         "maintainer": "SagerNet",
         "section": "net",
         "priority": "optional",
-        "architectures": ["amd64", "arm64", "armhf"]
+        "architectures": ["amd64"]
     }
 }
