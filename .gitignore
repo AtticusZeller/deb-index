@@ -1,0 +1,5 @@
+# APT output is built by Actions and uploaded as a Pages artifact.
+/pool/
+/dists/
+/version-lock/
+/site/

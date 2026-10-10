@@ -4,78 +4,74 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v4
 
       - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y dpkg-dev apt-utils
-
-      - name: Setup Git
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          sudo apt-get install -y dpkg-dev apt-utils jq gnupg
 
       - name: Import GPG key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
-          echo "allow-preset-passphrase" > ~/.gnupg/gpg-agent.conf
-          gpg-connect-agent RELOADAGENT /bye
-          echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --sign --armor --output /dev/null /dev/null
+          install -d -m 700 ~/.gnupg
+          printf '%s\n' "$GPG_PRIVATE_KEY" | gpg --batch --import
 
       - name: Update Repository
         run: |
-          mkdir -p {pool,dists,version-lock}/
-
+          set -euo pipefail
+          rm -rf pool dists version-lock site
+          mkdir -p pool dists version-lock
           for config in configs/*.json; do
-            echo "Processing config: $config"
             bash scripts/build-repo.sh "$config"
           done
-
           bash scripts/build-repo.sh --generate-metadata
+          gpg --batch --yes --dearmor -o "$RUNNER_TEMP/deb-index-keyring.gpg" public.key
+          gpgv --keyring "$RUNNER_TEMP/deb-index-keyring.gpg" dists/stable/InRelease
 
-      - name: Commit New version
+      - name: Prepare APT site
         run: |
-
-          if [[ -n $(git status --porcelain version-lock/) ]]; then
-            echo "Changes detected in version-lock directory"
-            git add version-lock/
-            git add dists/
-            git add pool/
-            git commit -m "Update new version"
-            git push
-          else
-            echo "No changes to commit in version-lock"
+          set -euo pipefail
+          mkdir -p site
+          cp -r pool dists site/
+          cp public.key install.sh uninstall.sh site/
+          printf '%s\n' '<!doctype html><html lang="en"><meta charset="utf-8"><title>DEB Index</title><h1>DEB Index</h1><p>APT packages: sing-box (SFL), alacritty, cc-switch.</p><p><a href="install.sh">Repository installer</a> | <a href="public.key">GPG public key</a></p></html>' > site/index.html
+          size=$(du -sb site | cut -f1)
+          # Leave room below the GitHub Pages 1 GB published-site limit.
+          if (( size > 950000000 )); then
+            echo "APT site is too large for Pages: $size bytes" >&2
+            exit 1
           fi
 
-      - name: Create Jekyll config
-        run: |
-          cat > _config.yml << 'EOF'
-          title: DEB Package Repository
-          description: Custom APT repository for various packages
-          show_downloads: true
-          EOF
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy to GitHub Pages'
-          enable_jekyll: true
+          path: site
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

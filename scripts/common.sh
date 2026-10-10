@@ -1,44 +1,27 @@
 #!/bin/bash
 
-create_repo_structure() {
-    local package_name=$1
-    mkdir -p "pool/${package_name}"
-    for arch in amd64 arm64 armhf; do
-        mkdir -p "dists/stable/main/binary-${arch}"
-    done
-}
+# Download into a temporary directory and validate before replacing a package.
+download_package() {
+    local repo=$1 version=$2 asset=$3 package_name=$4 arch=$5
+    local destination=$6
+    local temporary_dir
+    temporary_dir=$(mktemp -d)
 
-# Download a specific version of a package
-download_package_by_version() {
-    local repo=$1
-    local version=$2
-    local arch=$3
-    local pattern=$4
-    local package_name=$5
-
-    # check if the package already exists
-    local clean_version=${version#v}
-    local deb_file="pool/${package_name}/${package_name}_${clean_version}_${arch}.deb"
-
-    if [ -f "$deb_file" ]; then
-        echo "✓ Package ${package_name} version ${clean_version} for ${arch} already exists"
-        return 0
+    if ! gh release download "$version" --repo "$repo" --pattern "$asset" --dir "$temporary_dir"; then
+        rm -rf "$temporary_dir"
+        return 1
     fi
 
-    local asset_url=$(get_assets_for_version "$repo" "$version" "$arch" "$pattern")
-
-    if [ ! -z "$asset_url" ]; then
-        echo "Downloading package ${package_name} version ${clean_version} for ${arch}..."
-        wget -q -O "$deb_file" "$asset_url"
-        if [ $? -eq 0 ]; then
-            echo "✓ Successfully downloaded ${arch} package for version ${clean_version}"
-            return 0
-        else
-            echo "✗ Failed to download ${arch} package for version ${clean_version}"
-            rm -f "$deb_file"
-            return 1
-        fi
+    local downloaded="$temporary_dir/$asset"
+    local actual_name actual_arch
+    actual_name=$(dpkg-deb -f "$downloaded" Package) || { rm -rf "$temporary_dir"; return 1; }
+    actual_arch=$(dpkg-deb -f "$downloaded" Architecture) || { rm -rf "$temporary_dir"; return 1; }
+    if [[ "$actual_name" != "$package_name" || "$actual_arch" != "$arch" ]]; then
+        echo "Unexpected package: $actual_name/$actual_arch; expected $package_name/$arch" >&2
+        rm -rf "$temporary_dir"
+        return 1
     fi
-    echo "! No matching asset found for ${arch} in version ${version}"
-    return 1
+
+    mv "$downloaded" "$destination"
+    rm -rf "$temporary_dir"
 }

@@ -2,18 +2,18 @@
     "name": "sing-box",
     "source": {
         "type": "github",
-        "repo": "atticuszeller/sing-box-deb",
+        "repo": "SagerNet/sing-box",
         "asset_patterns": {
-            "amd64": "^sing-box_\\d+\\.\\d+\\.\\d+_amd64\\.deb$"
+            "amd64": "^SFL-[0-9.]+-amd64\\.deb$",
+            "arm64": "^SFL-[0-9.]+-arm64\\.deb$",
+            "armhf": "^SFL-[0-9.]+-armv7l\\.deb$"
         }
     },
     "package": {
         "name": "sing-box",
-        "maintainer": "nekohasekai",
+        "maintainer": "SagerNet",
         "section": "net",
         "priority": "optional",
-        "architectures": [
-            "amd64"
-        ]
+        "architectures": ["amd64", "arm64", "armhf"]
     }
 }
