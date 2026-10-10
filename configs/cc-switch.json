@@ -1,0 +1,19 @@
+{
+    "name": "cc-switch",
+    "source": {
+        "type": "github",
+        "repo": "farion1231/cc-switch",
+        "asset_patterns": {
+            "amd64": "^CC-Switch-v.*-Linux-x86_64\\.deb$"
+        }
+    },
+    "package": {
+        "name": "cc-switch",
+        "maintainer": "Jason Young",
+        "section": "utils",
+        "priority": "optional",
+        "architectures": [
+            "amd64"
+        ]
+    }
+}
