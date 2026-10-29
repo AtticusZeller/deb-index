@@ -80,3 +80,14 @@ remove cc-switch. The preceding three-architecture/five-package verification is 
 **Done**
 
 - [x] Configured downloads are exactly one amd64 SFL and one amd64 Alacritty package; both previously downloaded real DEBs were checked again.
+
+## Production activation verified (2026-10-29)
+
+The preceding credential and activation blockers describe the 2026-10-10 session.
+Current credentials successfully pushed the Orca integration to main, and
+[workflow run 40874558976](https://github.com/AtticusZeller/deb-index/actions/runs/40874558976)
+verified the production InRelease signature and deployed the Pages artifact successfully.
+The canonical public APT source offered alacritty 0.16.1, SFL/sing-box 1.14.4,
+and the newly added orca-ide 1.4.244. An isolated client accepted the production key
+and downloaded the Orca DEB with its upstream SHA256 digest; see [Orca verification](../orca/log.md).
+No Pages settings or signing secrets were changed in this session.

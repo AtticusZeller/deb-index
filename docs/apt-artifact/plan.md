@@ -1,26 +1,8 @@
-# Pending production activation
+# Pages Artifact activation
 
-Implementation and local validation are recorded in [log.md](log.md); usage is in ../../README.md.
+No pending migration activation tasks. The credential blocker recorded on 2026-10-10
+is historical: the current main branch can be pushed and its Pages artifact workflow deploys
+successfully. Production activation was verified on 2026-10-29; see [log.md](log.md).
 
-## Publish the verified migration
-
-Current Git credentials belong to Hubo1231 and cannot push to AtticusZeller/deb-index (HTTP 403).
-The GitHub API also reports push=false/admin=false. Pages remains configured for legacy deployment.
-
-### Task: Activate Pages Artifact in production
-
-**Change**
-
-- [ ] Use credentials with repository write and Pages administration permissions.
-- [ ] Push the local migration commit to main.
-- [ ] Change Settings → Pages → Source to GitHub Actions; run Update APT Repository.
-
-**Verification**
-
-1. [ ] Workflow succeeds, including InRelease verification with existing public.key.
-2. [ ] Public site exposes signed indexes and the two latest GUI-package downloads (amd64 SFL and alacritty).
-3. [ ] A client using the production key can apt update and see the new SFL candidate.
-
-**Done**
-
-- [ ] Production repository serves current SFL and the other latest stable packages via Pages Artifact.
+The subsequent Orca integration and live APT verification are recorded in
+[the Orca log](../orca/log.md). Usage is in [README](../../README.md).
