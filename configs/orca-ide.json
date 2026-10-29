@@ -1,0 +1,17 @@
+{
+    "name": "orca-ide",
+    "source": {
+        "type": "github",
+        "repo": "stablyai/orca",
+        "asset_patterns": {
+            "amd64": "^orca-ide_[0-9]+(\\.[0-9]+)*_amd64\\.deb$"
+        }
+    },
+    "package": {
+        "name": "orca-ide",
+        "maintainer": "stablyai",
+        "section": "utils",
+        "priority": "optional",
+        "architectures": ["amd64"]
+    }
+}

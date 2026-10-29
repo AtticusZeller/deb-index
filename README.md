@@ -11,11 +11,15 @@ and retains one release per application, for every configured architecture.
 | --- | --- | --- |
 | `sing-box` (SFL desktop client) | [SagerNet/sing-box](https://github.com/SagerNet/sing-box/releases), `SFL-*.deb` | amd64 |
 | `alacritty` | [AtticusZeller/alacritty-deb](https://github.com/AtticusZeller/alacritty-deb/releases) | amd64 |
+| `orca-ide` (Orca IDE) | [stablyai/orca](https://github.com/stablyai/orca/releases) | amd64 |
 
 SFL's Debian package name is `sing-box`. This repository serves the desktop client under that
 name; there is no separate `sing-box-desktop` package.
 GUI applications are published for amd64 only. Command-line tools may use amd64 or arm64;
-armhf is not supported. Both currently configured applications are GUI applications.
+armhf is not supported. All currently configured applications are GUI applications.
+
+After adding this repository, install Orca with `sudo apt install orca-ide`.
+Its Debian package name is `orca-ide`, avoiding the GNOME screen reader's `orca` package.
 
 ## Add repository
 
